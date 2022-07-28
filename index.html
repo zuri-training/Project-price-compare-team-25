@@ -12,16 +12,16 @@
 <body>
     <header>
         <nav>
-            <a class="logo" href=""> <img src="" alt="logo"> Brand Name</a>
+            <a class="logo" href=""> <img src="images/phone frame.png" alt="logo"> <span>Pricing Hub</span></a>
             <ul>
                 <div class="primary-nav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Categories</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">LogIn</a></li>
                 </div>
                 <div>
-                    <li class="signup"><a href="#">Sign up</a></li>
+                    <li class="signup"><a href="#">Sign-up</a></li>
                 </div>
             </ul>
         </nav>
@@ -29,8 +29,48 @@
         <div class="search">
             <input type="text" placeholder="Hi, what are you looking for?">
         </div>
-        <section class="slider">
-            <img src="images/slider2.png" alt="">
+        <section class="slidersection">
+            <!-- <img src="images/slider2.png" alt=""> -->
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="images/3.jpg" style="width:100%; height: 200px;">
+                </div>
+                <div class="mySlides fade">
+                  <img src="images/2.jpg" style="width:100%;  height: 200px;">
+                </div>
+                <div class="mySlides fade">
+                  <img src="images/1.jpg" style="width:100%;  height: 200px;">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+
+
+              <script>
+                var slideIndex = 0;
+                showSlides();
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  for(i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                  slideIndex++;
+                  if(slideIndex > slides.length) {
+                    slideIndex = 1
+                  }
+                  slides[slideIndex - 1].style.display = "block";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+              </script>
+
         </section>
     </header>
     <main>
