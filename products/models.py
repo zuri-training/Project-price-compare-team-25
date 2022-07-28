@@ -23,7 +23,7 @@ class Product(models.Model):
     product_name = models.CharField(max_length=225, db_index=True)
     created_on = models.DateTimeField(auto_now_add=True)
     modified_on = models.DateTimeField(auto_now=True)
-    product_img = models.ImageField(default='', blank=True)
+    product_img = models.SlugField(max_length=225, db_index=True)
     category_id = models.ForeignKey(Category, on_delete=models.CASCADE)
 
 class Comment(models.Model):
