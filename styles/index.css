@@ -240,8 +240,10 @@ margin-left:3em;
     cursor: pointer;
 }
 .showmore{
-    align-self: center;
-    justify-self: flex-end;
+    align-self: flex-start;
+    padding-right: 2em;
+    margin-top: 5em;
+    text-align: center;
 }
 .tips{
     background-color: rgb(126, 124, 124);
