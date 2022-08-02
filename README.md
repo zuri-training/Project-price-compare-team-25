@@ -6,7 +6,6 @@ A webscraper for the Django Framework that compares the product prices for three
 
 <!-- <img src="Screenshots/Homepage.png" width="700"> -->
 <h6>Inserts Image of homepage</h6>
-https://github.com/zuri-training/Project-price-compare-team-25
 
 # Table of Contents
 - <a href="https://github.com/zuri-training/Project-price-compare-team-25#Introduction">Introduction</a>
