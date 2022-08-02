@@ -1,6 +1,4 @@
-# Pricing Hub -Team25
-
-# Price Comparison Project (Pricing Hub)
+# Price Compare Project (Pricing Hub) by Team 25
 A webscraper for the Django Framework that compares the product prices for three Nigeria Online Shops.
 - Jumia
 - Konga
