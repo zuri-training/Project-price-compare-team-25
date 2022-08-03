@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
+# from django.http import HttpResponse   for testing
 
 
 
@@ -32,6 +33,23 @@ def register(request):
     else:
 
         return render(request, 'register.html')
+
+
+
+
+#For Testing
+# def home_view(request):
+
+
+#     name = "Justin"
+#     HTML_STRING = f"""
+# <h1> Hello {name}</h1>
+# <p>My first django page</p>
+# """
+#     return HttpResponse(HTML_STRING)
+
+
+
 
 # def login(request):
 
