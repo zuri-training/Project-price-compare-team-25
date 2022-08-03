@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.resetform{
+    background-color: white;
+    color: black;
+    width: 80%;
+    max-width: 550px;
+    left: 25%;
+    top: 20%;
+    position: absolute; 
+    padding: 30px;
+    border: 0px solid white;
+}
+h2.headerreset{
+    margin:35px 0px;
+    font-size: 35px;
+}
+.instruct{
+    text-align: left;
+    padding-bottom: 20px;
+}
+#labelreset{
+    text-align: left;
+}
+
+#email{
+    padding: 10px 5px;
+    margin-top: 15px ;
+    background-color: white;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+#ResetP{
+    padding: 10px 30px;
+    background-color: RGB(201,110,44); 
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+#ResetP:hover {
+    background-color: RGB(134, 73, 29);
+    color: white; 
+}
+#ResetP:active{
+    background-color: RGB(101, 55, 22);
+    color: white;
+}
+#ResetP:disabled{
+background-color: RGB(219, 158, 114);
+color: white;
+}
+/*create new password page */
+
+.resetform2{
+    background-color: white;
+    color: black;
+    width: 80%;
+    max-width: 550px;
+    left: 25%;
+    top: 10%;
+    position: absolute; 
+    padding: 30px;
+    border: 0px solid white;
+}
+h2.headerreset2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.instruct2{
+    text-align: left;
+    padding-bottom: 30px;
+}
+#labelCNY{
+    text-align: left;
+    margin-top: 30px;
+}
+#password{
+    padding: 10px 5px;
+    margin-top: 10px ;
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.labelunder{
+    margin-bottom: 25px;
+}
+.labelunder2{
+    margin-bottom: 15px;
+}
+#ResetP2{
+    padding: 10px 30px;
+    background-color: RGB(201,110,44); 
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 30%;
+}
+#ResetP2:hover {
+    background-color: RGB(134, 73, 29);
+    color: white; 
+}
+#ResetP2:active{
+    background-color: RGB(101, 55, 22);
+    color: white;
+}
+#ResetP:disabled{
+background-color: RGB(219, 158, 114);
+color: white;
+}
+i {
+    position: relative;
+    float:right ;
+    right:10px;
+    top: -25px;
+}
+  
+ 
