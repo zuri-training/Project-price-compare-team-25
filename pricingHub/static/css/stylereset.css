@@ -224,34 +224,4 @@ i {
     #ResetP2{
         margin-left: 23%;
     }
-    header{
-        background-color: RGB(0, 35,102);
-        color: white;
-        padding:5px;
-        margin-bottom:10px;
-        display: flex;
-        flex-direction: row;
-        display: inline-block;
-        width: 100%;
-          } 
-     
-    .logo{
-            flex: 50%;
-            display: inline-block;
-            text-align: left;
-            margin-left:15px;
-            padding: 10px 5px;
-          }
-          
-    .navigation{
-            flex: 50%;
-            align-self: right;
-            text-align: right;
-            display: block; 
-            float: right;
-            padding-top:10px;
-            margin-left: 0px;
-            margin-right: 25px;
-          }
-    
     }
