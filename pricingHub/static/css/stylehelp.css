@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 50px;
+
+}
+h4{
+    color: RGB(0, 35,102);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: RGB(0, 35,102);
+}
