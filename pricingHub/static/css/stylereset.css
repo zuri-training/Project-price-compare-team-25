@@ -4,16 +4,59 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+header{
+    background-color: RGB(0, 35,102);
+    color: white;
+    padding:5px;
+    margin-bottom:10px;
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+    width: 100%;
+      } 
+ 
+.logo{
+        flex: 50%;
+        display: inline-block;
+        text-align: left;
+        margin-left:15px
+      }
+      
+.navigation{
+        flex: 50%;
+        align-self: right;
+        text-align: right;
+        display: block; 
+        float: right;
+        padding-top:12px;
+        margin-left: 0px;
+        margin-right: 50px;
+      }
+
+.navig{
+ text-align: right;
+ color: white;
+ margin: 20px;
+ margin-right: 50px;
+ font-size: 20px;
+ display: inline-block;
+}
+.navig a{
+    color: white;
+    text-decoration: none;
+}
 .resetform{
     background-color: white;
     color: black;
     width: 80%;
     max-width: 550px;
-    left: 25%;
+    left: 30%;
     top: 20%;
     position: absolute; 
     padding: 30px;
     border: 0px solid white;
+    justify-content: center;
+    align-items: center;
 }
 h2.headerreset{
     margin:35px 0px;
@@ -63,11 +106,13 @@ color: white;
     color: black;
     width: 80%;
     max-width: 550px;
-    left: 25%;
-    top: 10%;
+    left: 30%;
+    top: 25%;
     position: absolute; 
     padding: 30px;
     border: 0px solid white;
+    justify-content: center;
+    align-items: center;
 }
 h2.headerreset2{
     font-size: 40px;
@@ -123,5 +168,90 @@ i {
     right:10px;
     top: -25px;
 }
-  
- 
+  /*Authentication page*/
+.vercode{
+    text-decoration: none;
+}
+#form {
+    max-width: 100%;
+    margin: 5px auto 0;
+}
+.inputver {
+      margin: 0 5px;
+      text-align: left;
+      line-height: 40px;
+      font-size: 40px;
+      border: none ;
+      border-bottom: 1px solid black;
+      outline: none;
+      width: 10%;
+      max-width: 100%;
+      transition: all .2s ease-in-out;
+      margin-bottom: 10px;
+    }
+    .instruct3{
+        margin-top: 40px;
+    }
+    .instruct4{
+        margin-top: 20px; 
+    }
+
+ @media only screen and (max-width: 500px){
+   main.resetform, main.resetform2{
+        background-color: white;
+        color: black;
+        width: 90%;
+        max-width: 100%;
+        padding: 10px;
+        border: 0px solid white;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        max-height: 100%;
+        left:5px;
+        right:5px;
+        top: 5px;
+        
+    }
+    h2.headerreset, h2.headerreset2{
+        font-size: 20px;
+        font-style: none;
+        font-weight: none;
+    }
+    p{
+        font-size:10px ;
+    }
+    #ResetP2{
+        margin-left: 23%;
+    }
+    header{
+        background-color: RGB(0, 35,102);
+        color: white;
+        padding:5px;
+        margin-bottom:10px;
+        display: flex;
+        flex-direction: row;
+        display: inline-block;
+        width: 100%;
+          } 
+     
+    .logo{
+            flex: 50%;
+            display: inline-block;
+            text-align: left;
+            margin-left:15px;
+            padding: 10px 5px;
+          }
+          
+    .navigation{
+            flex: 50%;
+            align-self: right;
+            text-align: right;
+            display: block; 
+            float: right;
+            padding-top:10px;
+            margin-left: 0px;
+            margin-right: 25px;
+          }
+    
+    }
