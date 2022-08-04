@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color: RGB(0, 35,102);
+    color: white;
+    padding:5px;
+    margin-bottom:10px;
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+    width: 100%;
+      } 
+ 
+.logo{
+        flex: 50%;
+        display: inline-block;
+        text-align: left;
+        margin-left:15px
+      }
+      
+.navigation{
+        flex: 50%;
+        align-self: right;
+        text-align: right;
+        display: block; 
+        float: right;
+        padding-top:12px;
+        margin-left: 0px;
+        margin-right: 50px;
+      }
+
+.navig{
+ text-align: right;
+ color: white;
+ margin: 20px;
+ margin-right: 50px;
+ font-size: 20px;
+ display: inline-block;
+}
+.navig a{
+    color: white;
+    text-decoration: none;
+}
+.resetform{
+    background-color: white;
+    color: black;
+    width: 80%;
+    max-width: 550px;
+    left: 30%;
+    top: 20%;
+    position: absolute; 
+    padding: 30px;
+    border: 0px solid white;
+    justify-content: center;
+    align-items: center;
+}
+h2.headerreset{
+    margin:35px 0px;
+    font-size: 35px;
+}
+.instruct{
+    text-align: left;
+    padding-bottom: 20px;
+}
+#labelreset{
+    text-align: left;
+}
+
+#email{
+    padding: 10px 5px;
+    margin-top: 15px ;
+    background-color: white;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+#ResetP{
+    padding: 10px 30px;
+    background-color: RGB(201,110,44); 
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+#ResetP:hover {
+    background-color: RGB(134, 73, 29);
+    color: white; 
+}
+#ResetP:active{
+    background-color: RGB(101, 55, 22);
+    color: white;
+}
+#ResetP:disabled{
+background-color: RGB(219, 158, 114);
+color: white;
+}
+/*create new password page */
+
+.resetform2{
+    background-color: white;
+    color: black;
+    width: 80%;
+    max-width: 550px;
+    left: 30%;
+    top: 25%;
+    position: absolute; 
+    padding: 30px;
+    border: 0px solid white;
+    justify-content: center;
+    align-items: center;
+}
+h2.headerreset2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.instruct2{
+    text-align: left;
+    padding-bottom: 30px;
+}
+#labelCNY{
+    text-align: left;
+    margin-top: 30px;
+}
+#password{
+    padding: 10px 5px;
+    margin-top: 10px ;
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.labelunder{
+    margin-bottom: 25px;
+}
+.labelunder2{
+    margin-bottom: 15px;
+}
+#ResetP2{
+    padding: 10px 30px;
+    background-color: RGB(201,110,44); 
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 30%;
+}
+#ResetP2:hover {
+    background-color: RGB(134, 73, 29);
+    color: white; 
+}
+#ResetP2:active{
+    background-color: RGB(101, 55, 22);
+    color: white;
+}
+#ResetP:disabled{
+background-color: RGB(219, 158, 114);
+color: white;
+}
+i {
+    position: relative;
+    float:right ;
+    right:10px;
+    top: -25px;
+}
+  /*Authentication page*/
+.vercode{
+    text-decoration: none;
+}
+#form {
+    max-width: 100%;
+    margin: 5px auto 0;
+}
+.inputver {
+      margin: 0 5px;
+      text-align: left;
+      line-height: 40px;
+      font-size: 40px;
+      border: none ;
+      border-bottom: 1px solid black;
+      outline: none;
+      width: 10%;
+      max-width: 100%;
+      transition: all .2s ease-in-out;
+      margin-bottom: 10px;
+    }
+    .instruct3{
+        margin-top: 40px;
+    }
+    .instruct4{
+        margin-top: 20px; 
+    }
+
+ @media only screen and (max-width: 500px){
+   main.resetform, main.resetform2{
+        background-color: white;
+        color: black;
+        width: 90%;
+        max-width: 100%;
+        padding: 10px;
+        border: 0px solid white;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        max-height: 100%;
+        left:5px;
+        right:5px;
+        top: 5px;
+        
+    }
+    h2.headerreset, h2.headerreset2{
+        font-size: 20px;
+        font-style: none;
+        font-weight: none;
+    }
+    p{
+        font-size:10px ;
+    }
+    #ResetP2{
+        margin-left: 23%;
+    }
+    header{
+        background-color: RGB(0, 35,102);
+        color: white;
+        padding:5px;
+        margin-bottom:10px;
+        display: flex;
+        flex-direction: row;
+        display: inline-block;
+        width: 100%;
+          } 
+     
+    .logo{
+            flex: 50%;
+            display: inline-block;
+            text-align: left;
+            margin-left:15px;
+            padding: 10px 5px;
+          }
+          
+    .navigation{
+            flex: 50%;
+            align-self: right;
+            text-align: right;
+            display: block; 
+            float: right;
+            padding-top:10px;
+            margin-left: 0px;
+            margin-right: 25px;
+          }
+    
+    }
