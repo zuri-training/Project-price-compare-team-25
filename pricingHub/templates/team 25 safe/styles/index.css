@@ -36,52 +36,7 @@ header {
 .logo {
     margin: 0em 1em;
   }
-  /* nav {
-    display: flex;  
-  } */
-  /* nav ul {
-    display: flex;
-    align-self: center;
-    align-items: center;
-  } */
-  li {
-    list-style-type: none;
-    margin: 0em 1em;
-  }
-  .signup {
-    padding: 0.05em ;
-    border-radius: 0.2em;
-    background-color: #c96e2c;
-    padding: 0.2em 1.5em ;
-  }
-  .signup a {
-    color: white;
-  }
-  .signup1 {
-    background-color: #c96e2c;
-    padding: 0.4em ;
-    border-radius: 0.1em;
-    width: 40%;
-    margin: 2em auto;
-  }
-  .signup1 a {
-    color: white;
-  }
-/* harmburger */
-.overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .35s, visibility .35s, height .35s;
-    overflow: hidden;
-    background: black;
-    z-index: -1;
-}
-.top-header{
+  .top-header{
     display: flex;
     justify-content: space-between;
 }
@@ -124,6 +79,40 @@ header {
   text-decoration: underline;
 }
 
+  .signup {
+    padding: 0.05em ;
+    border-radius: 0.2em;
+    background-color: #c96e2c;
+    padding: 0.2em 1.5em ;
+  }
+  .signup a {
+    color: white;
+  }
+  .signup1 {
+    background-color: #c96e2c;
+    padding: 0.4em ;
+    border-radius: 0.1em;
+    width: 40%;
+    margin: 2em auto;
+  }
+  .signup1 a {
+    color: white;
+  }
+/* harmburger */
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    background: black;
+    z-index: -1;
+}
+
 #hamburger-input{
   display: none;
 }
@@ -141,11 +130,11 @@ header {
     font-family: 'Cabin', Sans-serif;
     background: linear-gradient(
       to bottom, 
-      #c96e2c, #c96e2c 20%, 
-      white 20%, white 40%, 
-      #c96e2c 40%, #c96e2c 60%, 
-      white 60%, white 80%, 
-      #c96e2c 80%, #c96e2c 100%
+      white, white 20%, 
+      #2b4880 20%, #2b4880 40%, 
+      white 40%, white 60%, 
+      #2b4880  60%, #2b4880  80%, 
+      white 80%, white 100%
     );
 }
 
@@ -332,7 +321,7 @@ header {
   }
   .gadget__categories {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 1em auto;
     flex-wrap: wrap;
   }
@@ -348,10 +337,22 @@ header {
     padding: 0em;
     text-align-last:center;
   }
+  .platform-and-price {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    margin:0em 0.1em auto;
+  }
   .price {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     margin-left: 0.4em;
+  }
+  .product-name {
+    margin: 0em auto;
+    font-size: .8rem;
+    font-weight: 600;
+    width: 100%;
   }
   .view-in-category {
     margin: 0.5em 3em;
@@ -360,7 +361,7 @@ header {
     border-radius: 0.5em;
     color: #c96e2c;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: .6rem;
     background: none;
     cursor: pointer;
   }
@@ -372,7 +373,7 @@ header {
   }
   .tips {
     background-color: #f4e2d5;
-    padding: 1em;
+    padding: .5em;
     font-family: 'open sans';
   }
   .tips-img img{
@@ -380,12 +381,12 @@ header {
 }
 .tips-text {
     margin: 0em 1em;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.5em;
   }
   .tips-text h3 {
     margin: 0em;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5em;
     width: 100%;
     font-family: 'open sans';
@@ -517,6 +518,20 @@ header {
     margin: 0em;
     flex-wrap: wrap;
   }
+  .new-product{
+    text-align: center;
+  }
+  .menu-with-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: .5em auto;
+    padding: 0em;
+  }
+  .menu-with-img img{
+    width: 100%;
+
+  }
   .showmore{
     align-self: flex-end;
     width: 100%;
@@ -526,15 +541,37 @@ header {
     text-align: center;
 }
   .tips-img img{
-    width: 70%;
+    width: 90%;
 }
+.tips-text {
+    margin: 0em 1em;
+    font-size: 1rem;
+    line-height: 1.5em;
+  }
+  .tips-text h3 {
+    margin: 0em;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    width: 100%;
+    font-family: 'open sans';
+  }
+  .tips-to-buy {
+    list-style-type: disc;
+  }
 .teams-img{
     text-align: center;
 }
 .teams-img img{
-    width: 50%;
+    width: 90%;
     text-align: center;
 }
+.about-us-btn {
+    padding: 1em 3em;
+    margin:1em auto;
+  }
+  .testimonial-comment{
+    text-align: center;
+  }
 }
 @media screen and (min-width: 980px) {
 
@@ -580,12 +617,19 @@ header {
 
     .new-product-release__product {
       display: flex;
-      justify-content: space-evenly;
-      align-items: center;
+      /* justify-content: space-evenly; */
+      place-content: center;
+      place-items: center;
       padding: 0em;
       margin: 0em;
       flex-wrap: wrap;
     }
+    .new-products {
+        margin: 1em 2em;
+        padding: 0em;
+        align-self: center;
+        justify-self: center;
+      }
     .showmore {
         align-self: flex-start;
         margin: 12em 2em;
