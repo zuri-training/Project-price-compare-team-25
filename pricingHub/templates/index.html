@@ -17,14 +17,19 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Categories</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">LogIn</a></li>
                 </div>
-                <div>
-                    <li class="signup"><a href="#">Sign-up</a></li>
-                </div>
+                    <div>
+                        {% if user.is_authenticated %}
+                        <li><a href="/logout">Logout</a></li>
+                    </div>
+                    <div>
+                        {% else %}
+                        <li><a href="/login">LogIn</a></li>
+                        <li class="signup"><a href="/signup">Sign-up</a></li>
+                    </div>
+                    {% endif %}
             </ul>
         </nav>
-
         <div class="search">
             <input type="text" placeholder="Hi, what are you looking for?">
         </div>
