@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
+# from django.http import HttpResponse   for testing
 
 
 def home(request):
@@ -35,10 +36,51 @@ def register(request):
 
         return render(request, 'register.html')
 
+<<<<<<< HEAD
 def login(request):
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
+=======
+
+
+
+#For Testing
+# def home_view(request):
+
+
+#     name = "Justin"
+#     HTML_STRING = f"""
+# <h1> Hello {name}</h1>
+# <p>My first django page</p>
+# """
+#     return HttpResponse(HTML_STRING)
+
+
+
+
+# def login(request):
+
+#     if request.method == 'POST':
+#         email = request.POST['email']
+#         password = request.POST['password']
+
+#         user = auth.authenticate(email=email, password=password)
+
+#         if user is not None:
+#             auth.login(request, user)
+#             return redirect('/')
+#         else:
+#             messages.info(request, 'Invalid Credentials')
+#             return redirect('login')
+
+#     else:
+#         return render(request, 'login.html')
+
+# def logout(request):
+#     auth.logout(request)
+#     return redirect('login')
+>>>>>>> ayobanjo
 
         user = auth.authenticate(username=username, password=password)
         if user is not None:
