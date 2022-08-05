@@ -90,8 +90,8 @@ header {
   }
   .signup1 {
     background-color: #c96e2c;
-    padding: 0.4em ;
-    border-radius: 0.1em;
+    padding: 0.4em  .5em;
+    border-radius: 0.5em;
     width: 40%;
     margin: 2em auto;
   }
@@ -211,13 +211,20 @@ header {
     color: #fff;
   }
   .img-container1 {
-    background-color: green;
-  }
+    background-color: #002366;
+    background-image: url('images/slider-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat:0 0;
+    background-attachment: fixed;
+}
   .img-container2 {
-    background-color: rgb(77, 4, 4);
+    background-color: #1960e4;
+    background-image: url('images/slider-2.png');
   }
   .img-container3 {
-    background-color: blue;
+    background-color: #5c8fee;
+    background-image: url('images/slider-3.png');
   }
   
   /* Next & previous buttons */
@@ -308,7 +315,7 @@ header {
     padding: 1em 4em 1em 1em;
     width: 80%;
     background-color: rgb(241, 235, 235);
-    border: none;
+    border: 0.02em solid black;
     border-radius: 0.5em;
   }
   .categories {
@@ -327,18 +334,26 @@ header {
   }
   .gadget__categories span {
     margin: 0em;
+    padding:1.5em 1em;
   }
-  .gadget__categories span p {
-    margin-left: 0em;
-    font-weight: 600;
+  .categories_series{
+    background-color: #002366;
+    padding: 1em 2.5em;
+    margin: 1em .2em;
+    font-weight: 500;
+    font-size: .8rem;
+    border-radius: .4em;
+    color: white;
+    border: 1px solid rgb(56, 2, 2);
   }
   .new-products {
     margin: 0em;
     padding: 0em;
-    text-align-last:center;
+    text-align:center;
   }
   /* .menu-with-img { 
     padding: .5em;
+    margin: 0em;
     box-shadow: 10px 2px 15px 5px rgb(205, 205, 209) ;
   } */
   .platform-and-price {
@@ -354,9 +369,13 @@ header {
   }
   .product-name {
     margin: 0em auto;
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 600;
-    width: 100%;
+    width: 80%;
+  }
+  .comments {
+    color: rgb(126, 124, 124);
+    font-size: 1rem;
   }
   .view-in-category {
     margin: 0.5em 3em;
@@ -365,7 +384,7 @@ header {
     border-radius: 0.5em;
     color: #c96e2c;
     font-weight: bold;
-    font-size: .6rem;
+    font-size: .8rem;
     background: none;
     cursor: pointer;
   }
@@ -376,15 +395,20 @@ header {
     text-align: center;
   }
   .tips {
-    background-color: #f4e2d5;
-    padding: .5em;
+    background-color: #CCD3E0;
+    padding: 1em;
     font-family: 'open sans';
   }
+  .tips-img{
+    width: 100%;
+    height: 100%;
+}
   .tips-img img{
     width: 100%;
+    height: 100%;
 }
 .tips-text {
-    margin: 0em 1em;
+    margin: 0em 1em 0em 0em;
     font-size: 1rem;
     line-height: 1.5em;
   }
@@ -516,7 +540,7 @@ header {
 
   .new-product-release__product {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 0em;
     margin: 0em;
@@ -549,18 +573,29 @@ header {
 }
 .tips-text {
     margin: 0em 1em;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.5em;
   }
   .tips-text h3 {
     margin: 0em;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     line-height: 1.5em;
     width: 100%;
     font-family: 'open sans';
+    margin-bottom: 1em;
+  }
+  .tips-text p {
+    margin: 0em;
+    font-size: 1.3rem;
+    line-height: 1.5em;
+    width: 100%;
+    font-family: 'open sans';
+    margin-bottom: 1em;
   }
   .tips-to-buy {
     list-style-type: disc;
+    font-size: 1.2rem;
+    margin:0em 2em;
   }
 .teams-img{
     text-align: center;
@@ -577,7 +612,19 @@ header {
     text-align: center;
   }
 }
-@media screen and (min-width: 980px) {
+@media screen and (max-width: 400px)  and (min-width: 716px) {
+
+    .new-product-release__product {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0em;
+        margin: 0em;
+        flex-wrap: wrap;
+      }
+      .new-product{
+        text-align: center;
+      }
 
     .newsletter{
         display: flex;
@@ -601,7 +648,7 @@ header {
       }
 }
 
-@media screen and (min-width: 985px) and (max-width: 1400px) {
+@media screen and (min-width: 900px) and (max-width: 1400px) {
     
     #main-menu{
 
@@ -611,7 +658,7 @@ header {
     .signup1 {
         background-color: #c96e2c;
         padding: 0.4em ;
-        border-radius: 0.1em;
+        border-radius: 0.3em;
         width: 20%;
         margin: 2em auto;
       }
@@ -626,7 +673,8 @@ header {
       place-items: center;
       padding: 0em;
       margin: 0em;
-      flex-wrap: wrap;
+      gap: 1em;
+      /* flex-wrap: wrap; */
     }
     .new-products {
         margin: 1em 2em;
@@ -645,7 +693,7 @@ header {
         justify-content: space-evenly;
     }
     .teams-img{
-        width: 30%;
+        width: 45%;
         text-align: center;
     }
     .theteam{
@@ -656,7 +704,7 @@ header {
       }
     .meet-the-teem-text {
     padding: 0em;
-      margin:7em 0em 1em;
+      margin:1em;
       font-size: 1.3rem;
       line-height: 2em;
       width: 50%;
@@ -669,20 +717,21 @@ header {
         padding: 1em;
         font-family: 'open sans';
       }
-    .tips-img img{
-      width: 50%;
-  }
-  .tips-img{
-    width: 40%;
+        .tips-img{
+    width: 50%;
 }
+    .tips-img img{
+      width: 100%;
+  }
+
 .tips-img img{
     width: 100%;
 }
 .tips-text {
-  margin: 0em 4em;
+  margin: 0em 1em;
   font-size: 1.3rem;
   line-height: 2em;
-  width: 55%;
+  width: 50%;
 }
 .tips-text h3 {
     margin: 0em;
@@ -694,6 +743,10 @@ header {
 .tips-to-buy {
   list-style-type: disc;
 }
+.menu-with-img {
+    display: flex;
+    justify-content: center;
+  }
 .about-us-btn {
     padding: 1em 5em;
     background-color: #c96e2c;
@@ -704,12 +757,12 @@ header {
     margin: 3em 12em 0em;
   }
 .testimonial {
-    margin: 2em 5em;
+    margin: 2em;
     display: flex;
     /* flex-wrap: wrap; */
   }
   .testimonial-comment {
-    width: 80%;
+    width: 100%;
     font-weight: bold;
     color: black;
   }
@@ -717,7 +770,7 @@ footer {
     background-color: #002366;
     color: white;
     padding: 1em;
-    line-height: 4em;
+    line-height: 3em;
     font-family: 'poppins';
   }
   .top-footer {
@@ -728,25 +781,43 @@ footer {
       display: flex;
       justify-content: space-between;
       margin-left: 2em;
+      gap: 2em;
   }
-  .brandlogo,.information,.connect{
-      margin: .2em 2em;
+  .information{
+      margin: .2em 3em;
       font-family: 'poppins';
+      width: 20%;
+      
+  }
+  .connect{
+    margin: .2em 3em;
+      font-family: 'poppins';
+      width: 30%;
+  }
+  .brandlogo{
+    padding: 0em;
+    margin-right: 0em;
+
+  }
+  .brandlogo img{
+    width: 100%;
+    
   }
   .contact-us button{
-      margin: 7em 10em;
-      padding: .7em 5em;
+      margin: 5em 10em;
+      padding: .7em 4em;
       color:#fff;
+      text-align: center;
       background-color: #c96e2c;
       border: none;
-      border-radius: .2em ;
+      border-radius: .3em ;
       font-family: 'poppins';
       font-weight: 500;
   }
   
   .primary-footer{
       display: flex;
-      margin: 0em 4em;
+      margin: 2em 4em 0em;
       justify-content: space-between;
   }
   .primary-footer div a{
