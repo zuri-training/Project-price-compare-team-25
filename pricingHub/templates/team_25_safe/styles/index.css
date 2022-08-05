@@ -337,6 +337,10 @@ header {
     padding: 0em;
     text-align-last:center;
   }
+  /* .menu-with-img { 
+    padding: .5em;
+    box-shadow: 10px 2px 15px 5px rgb(205, 205, 209) ;
+  } */
   .platform-and-price {
     display: flex;
     place-content: center;
