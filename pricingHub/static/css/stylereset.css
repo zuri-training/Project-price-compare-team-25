@@ -5,7 +5,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 header{
-    background-color: RGB(0, 35,102);
+    background-color: RGB(43, 72, 128);
     color: white;
     padding:5px;
     margin-bottom:10px;
@@ -47,7 +47,7 @@ header{
 }
 .resetform{
     background-color: white;
-    color: black;
+    color: RGB(18, 18, 18);
     width: 80%;
     max-width: 550px;
     left: 30%;
@@ -103,7 +103,7 @@ color: white;
 
 .resetform2{
     background-color: white;
-    color: black;
+    color: RGB(18, 18, 18);
     width: 80%;
     max-width: 550px;
     left: 30%;
@@ -232,7 +232,7 @@ i {
     }
    main.resetform, main.resetform2{
         background-color: white;
-        color: black;
+        color: RGB(18, 18, 18);
         width: 90%;
         max-width: 100%;
         padding: 5px;
