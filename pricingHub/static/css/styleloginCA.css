@@ -111,12 +111,13 @@ label
     cursor: pointer;
 }
 
-.submit a{
+.submit button{
     background: #C96E2C;
     padding: 10px 120px;
     text-align: center;
     color: white;
     border-radius: 7px;
+    border: 0px;
 }
 
 .cta p{
@@ -194,7 +195,7 @@ label
         }
        
         h2 {
-            font-size: 30px;
+            font-size: 18px;
             font-style: none;
             font-weight: none;
             text-align: center;
@@ -229,6 +230,7 @@ label
         }
         label {
             margin-left: 10px;
+            font-size: 15px;
         }
         p{
             margin-left: 15px;
@@ -252,6 +254,9 @@ label
         }
         #notify{
             margin-left: 10px;
+        }
+        input{
+            font-size: 13px;
         }
         }
     
