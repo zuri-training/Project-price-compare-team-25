@@ -185,57 +185,143 @@ header {
   opacity: 0.4;
 }
 
-
 h3{
-    color:white;
+  color:white;
 }
 
 h2{
-    font-family: "poppins",sans-serif;
-    font-weight:600;
-    margin-bottom: 15px;
-    margin-left: 40px;
+  font-family: "poppins",sans-serif;
+  font-weight:600;
+  margin-bottom: 15px;
+  margin-left: 40px;
+  color: #002366;
 }
 .privacy{
-   text-align: center;
-   margin-top: 10px; 
-   justify-content: center;
+ text-align: center;
+ margin-top: 10px; 
+ justify-content: center;
 }
 p{
-    margin-bottom :25px;
-    line-height: 1.7;
-    text-align: justify;
-    margin-left: 45px;
-    margin-right:45px;
-    font-family: "open sans",sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+  margin-bottom :25px;
+  line-height: 1.7;
+  text-align: justify;
+  margin-left: 45px;
+  margin-right:45px;
+  font-family: "open sans",sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 
 }
 bold{
-  font-weight: bold; 
-  color: navy
+font-weight: bold; 
+color:#002366;
 }
 strong{
-    color:orangered;
+  color:orangered;
 }
 .copyright{
-    text-align:center;
-    margin-top: 30px;
-    margin-bottom: 50px;
+  text-align:center;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 .heading{
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
+  footer {
+    background-color: #002366;
+    color: white;
+    padding: 1em;
+    line-height: 4em;
+    font-family: 'poppins';
+  }
+  .contact-us button{
+    margin: 2em auto;
+    padding: .7em 5em;
+    color:#fff;
+    background-color: #c96e2c;
+    border: none;
+    border-radius: .2em ;
+    font-family: 'poppins';
+    font-weight: 500;
+}
+.primary-footer div a{
+    color: #fff;
+    margin-right: 1em;
+}
+
+input[type=email]{
+  
+  padding: .7em 5em;
+  margin: 2em auto;
+  border-radius: .2em;
+  border: none;
+  color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 980px) {
+  #main-menu {
+    display: none;
+  }
+  #hamburger-menu {
+    display: inline;
+  }
+  .top-header a{
+    width: 40%;
+    margin: 0em;
+}
+.logo img{
+    margin: 0em;
+    padding: 0em;
+    align-self: flex-start;
+}
+#main-menu {
+  height: 100px;
+  width: 70%;
+  margin: 0px 1em 0em 0em;  
+  z-index: 9;
+}
+p{
+  
+  font-size: 16px;
+
+}
+}
+
+@media screen and (min-width: 900px) and (max-width: 1400px) {
+    
+    #main-menu{
+
+        margin-left: 2em;
+
+    }
+    .signup1 {
+        background-color: #c96e2c;
+        padding: 0.4em ;
+        border-radius: 0.3em;
+        width: 20%;
+        margin: 2em auto;
+      }
+      .signup1 a {
+        color: white;
+      }
+
 footer {
     background-color: #002366;
     color: white;
     padding: 1em;
     line-height: 3em;
     font-family: 'poppins';
-    font-weight: bold;
   }
   .top-footer {
     display: flex;
@@ -267,99 +353,26 @@ footer {
     width: 100%;
     
   }
-  
   .contact-us button{
-    margin: 2em auto;
-    padding: .7em 5em;
-    color:#fff;
-    background-color: #c96e2c;
-    border: none;
-    border-radius: .2em ;
-    font-family: 'poppins';
-    font-weight: 500;
-}
-
+      margin: 5em 10em;
+      padding: .7em 4em;
+      color:#fff;
+      text-align: center;
+      background-color: #c96e2c;
+      border: none;
+      border-radius: .3em ;
+      font-family: 'poppins';
+      font-weight: 500;
+  }
   
   .primary-footer{
       display: flex;
-    margin: 2em 4em 0em;
-    justify-content: space-between;
-    color: #fff;
+      margin: 2em 4em 0em;
+      justify-content: space-between;
   }
   .primary-footer div a{
       color: #fff;
       margin-right: 4em;
   }
-    @media screen and (max-width: 980px) {
-        #main-menu{
-          display: none;
-        }
-        #hamburger-menu {
-          display: inline;
-        }
-        .top-header a{
-          width: 40%;
-          margin: 0em;
-      }
-      .logo img{
-          margin: 0em;
-          padding: 0em;
-          align-self: flex-start;
-      }
-      #main-menu{
-        height: 100px;
-        width: 70%;
-        margin: 0px 1em 0em 0em;  
-        z-index: 9;
-      }  
-       #main-menu{
-    
-        margin-left: 2em;
-    
-        }
-        .signup1 {
-         background-color: #c96e2c;
-         padding: 0.4em ;
-         border-radius: 0.3em;
-         width: 20%;
-         margin: 2em auto;
-          }
-          .signup1 a {
-            color: white;
-          } p{
-            margin-bottom :25px;
-            line-height: 1.7;
-            text-align: justify;
-            margin-left: 45px;
-            margin-right:45px;
-            font-family: "open sans",sans-serif;
-            font-weight: 400;
-            font-size: 15px;
-        
-        }
-
-          .secondary-footer{
-            flex-direction: column;
-         }
-         .primary-footer{
-            flex-direction: column;
-            margin: 2em 4em 0em;
-            justify-content: space-between;
-        }
-         .contact-us{
-             justify-content: flex-end;
-         }
-         .contact-us button{
-            margin: 5em 10em;
-            padding: .7em 4em;
-            color:#fff;
-            text-align: center;
-            background-color: #c96e2c;
-            border: none;
-            border-radius: .3em ;
-            font-family: 'poppins';
-            font-weight: 500;
-            
-
-    }
+ 
   }
