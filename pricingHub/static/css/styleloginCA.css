@@ -1,0 +1,264 @@
+@import url(./fonts/stylesheet.css);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    background-color: RGB(43, 72, 128);
+    color: white;
+    padding:5px;
+    margin-bottom:0px;
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+    width: 100%;
+      } 
+ 
+.logo{
+        flex: 50%;
+        display: inline-block;
+        text-align: left;
+        margin-left:15px
+      }
+      
+.navigation{
+        flex: 50%;
+        align-self: right;
+        text-align: right;
+        display: block; 
+        float: right;
+        padding-top:12px;
+        margin-left: 0px;
+        margin-right: 50px;
+      }
+
+.navig{
+ text-align: right;
+ color: white;
+ margin: 20px;
+ margin-right: 50px;
+ font-size: 20px;
+ display: inline-block;
+}
+.navig a{
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+input::placeholder{
+    border-radius: 10px;
+    padding-left: 7px;
+}
+
+input{
+    margin-top: 7px;
+}
+
+/* Registration Form */
+
+#reg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+h2{
+    font-size: 45px;
+}
+label{
+    font-size: 20px;
+    
+}
+input{
+    font-size: 18px;
+     
+}
+p{
+    font-size: 18px;
+}
+
+#reg .login-form h2{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#reg .sec{
+    margin: 10px 3px 20px 3px; 
+}
+
+#reg .sec .labels{
+    padding-bottom: 19px;
+    font-size: 30px;
+}
+
+.size{
+    width: 400px;
+    height: 25px;
+    border:1px solid grey;
+    border-radius: 5px;
+    padding: 5px 4px;
+  
+}
+label
+.fa-eye{
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.submit button{
+    background: #C96E2C;
+    padding: 10px 120px;
+    text-align: center;
+    color: white;
+    border-radius: 7px;
+    border: 0px;
+}
+
+.cta p{
+    padding-top: 20px;
+    margin-left: 70px;
+}
+.cta1 p{
+    padding-top: 20px;
+    margin-left: 0px;
+}
+.cta2 p{
+    margin: 5px;
+    margin-bottom: 30px;
+    margin-left: 220px;
+    color:#002366;
+}
+
+.side-image img{
+    transform: scale(0.7);
+}
+ 
+
+
+/* Mobile Devices */
+ @media only screen and (max-width: 500px){
+        header{
+            display:flex;
+            
+        }
+        .navigation{
+            display: flex;
+            font-size: 10px;
+            flex: 70%;
+            align-self: right;
+            text-align: right;
+            float: right;
+            padding-top:10px;
+            margin-right:15px; 
+        }
+        #reg{
+            flex-direction: column;
+             margin:20px;
+            background-color: white;
+            color: RGB(18, 18, 18);
+            width: 80%;
+            max-width: 100%;
+            padding: 5px;
+            border: 0px solid white;
+            align-items: center;
+            left:5px;
+            right:5px;
+        }
+        
+        .side-image{
+            display: none;
+        }
+     
+       img{
+        width:60px;
+        height:30px;
+        margin-top: 10px;
+        margin-right: 40px;
+       }  
+        .logo{
+                margin-left:5px;
+                flex: 30px;
+              }
+        .navig{
+         text-align: right;
+         color: white;
+         margin: 10px;
+         margin-right: 5px;
+         font-size: 10px;
+         display: inline-block;
+        }
+       
+        h2 {
+            font-size: 18px;
+            font-style: none;
+            font-weight: none;
+            text-align: center;
+        }
+        p{
+            font-size:13px ;
+        }
+        .submit{
+            margin-left: 10px;
+            
+        }
+        .submit a{
+            background: #C96E2C;
+            padding: 8px 80px;
+            text-align: center;
+            color: white;
+            border-radius: 5px;
+        }
+          .reg-form{
+            padding:50px;
+        }
+        .size{
+            width: 280px;
+            height: 25px;
+            border:1px solid grey;
+            border-radius: 5px;
+            padding: 5px 4px;
+            margin-left: 10px;
+        }
+        .sec{
+            margin-left: 10px; 
+        }
+        label {
+            margin-left: 10px;
+            font-size: 15px;
+        }
+        p{
+            margin-left: 15px;
+        }
+        .cta2 p{
+            margin: 5px;
+            margin-bottom: 30px;
+            margin-left: 150px;
+            color:RGB(43, 72, 128)
+        }
+        .cta1 p{
+            padding-top: 20px;
+            margin-left: 10px;
+        }
+        .cta p{
+            padding-top: 20px;
+            margin-left: 10px;
+        }
+        #accept-privacy{
+            margin-left: 10px;
+        }
+        #notify{
+            margin-left: 10px;
+        }
+        input{
+            font-size: 13px;
+        }
+        }
+    
+
+ 
