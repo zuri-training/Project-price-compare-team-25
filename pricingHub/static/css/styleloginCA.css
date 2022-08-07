@@ -111,12 +111,13 @@ label
     cursor: pointer;
 }
 
-.submit a{
+.submit button{
     background: #C96E2C;
     padding: 10px 120px;
     text-align: center;
     color: white;
     border-radius: 7px;
+    border: 0px;
 }
 
 .cta p{
