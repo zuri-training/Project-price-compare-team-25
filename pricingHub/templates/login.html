@@ -1,65 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LogIn Account</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="../static/css/styleloginCA.css">
-</head>
-<body>
-<header>
-   
-        <div class="logo">
-            <p class="logo"><img src="../static/assets/@Pricehub-05 1 (1).png" /></p>
-          </div>
-          <div class="navigation">
-            <p class="navig"><a href="">Home</a></p>
-            <p class="navig"><a href="">Categories</a></p>
-            <p class="navig"><a href="">Contact Us</a></p>
-          </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../static/css/styleloginCA.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p class="logo">
+          <img src="../static/assets/@Pricehub-05 1 (1).png" />
+        </p>
+      </div>
+      <div class="navigation">
+        <p class="navig"><a href="">Home</a></p>
+        <p class="navig"><a href="">Categories</a></p>
+        <p class="navig"><a href="">Contact Us</a></p>
+      </div>
+    </header>
+    <main>
+      <section id="reg">
+        <div class="side-image">
+          <img
+            src="../static/assets/images/_Downloader 1.png"
+            alt="lady smiling"
+          />
+        </div>
+        <div class="reg-form">
+          <h2>Login your account</h2>
+          <form method="POST" action="login">
+            {% csrf_token %}
+            <div class="sec">
+              <label for="email">Email Address</label><br />
 
+              <input
+                type="text"
+                class="size"
+                placeholder="input your mail address"
+                name="email"
+                autocapitalize="none"
+                autocomplete="email"
+                required
+              />
+            </div>
 
-</header>
-<main>
-   <section id="reg">
+            <div class="sec">
+              <label for="password">Password</label><br />
+              <input
+                type="password"
+                class="size"
+                name="password"
+                placeholder="Input your password"
+                autocomplete="current-password"
+                id="password"
+                required
+              />
+              <i class="far fa-eye" id="togglePassword"></i>
+            </div>
+            <div class="cta2">
+              <p>
+                Forgot password?<a
+                  href="{% url 'password_reset' %}"
+                  class="alert-link"
+                  >Reset password</a
+                >
+              </p>
+            </div>
 
-    <div class="side-image">
-        <img src="../static/assets/images/_Downloader 1.png" alt="lady smiling">
-   </div>
-       <div class="reg-form">
-            <h2>Login your account </h2>
-            <form method="POST" action="login">
-                {% csrf_token %}
-                <div class="sec">
-                    <label for="email">Email Address</label><br>
+            <div class="submit">
+              <button type="submit">Log in</button>
+            </div>
 
-                    <input type="text" class="size" placeholder="input your mail address" name="email" autocapitalize="none" autocomplete="email" required>
-                </div>
-
-                <div class="sec">
-                    <label for="password">Password</label><br>
-                    <input type="password" class="size" name="password" placeholder="Input your password" autocomplete="current-password" id="password" required>
-                    <i class="far fa-eye" id="togglePassword"></i>
-                </div>
-                <div class="cta2">
-                    <p>Forgot password?<a href="{% url 'password_reset' %}"
-                        class="alert-link">Reset password</a></p>
-                </div>
-                 
-                <div class="submit">
-                    <button type="submit">Log in</button>
-                </div>   
-
-                <div class="cta1">
-                    <p>Dont have a PricingHub account? <a href="{% url 'signup' %}">Create account</a></p>
-                </div>
-            </form>
-       </div>
-
-      
-   </section>   
-</main>
-</body>
+            <div class="cta1">
+              <p>
+                Dont have a PricingHub account?
+                <a href="{% url 'register' %}">Create account</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
