@@ -52,6 +52,7 @@ We'd like to thank The Zuri Team for creating this platform and coming up with t
 
 ### Team 25
 | Names | Slack Username|
+| ------------- | ------------- |
 | Samuel Adepoju | @Sammydepoj |
 | Abigail Asuquo | @AnniesDsigns |
 | Promise Udia | @Parah |
