@@ -1,25 +1,12 @@
 # Team 25 Price Compare ( Pricing Hub) Project.
 Team 25 is designing and implementing a platform for comparing the prices of gadgets across three E-commerce platforms namely Kara ng, Konga,  and Jumia. The website is expected to increase the sales on these platforms, serve as a key source of information by documenting price trends and generate leads and inquiries for these platforms. 
 
-# Project Documentation 
-
-https://docs.google.com/document/u/0/d/10qsoyBd0oL_cO02p2cD-qYHt94uvzGGtjPwSZJlzEYU/mobilebasic
-
-# Presentation Slides 
-
-https://docs.google.com/presentation/d/1DjNxjVHMToqwqUbdlc4emv6zCfOb2M0FAjxUpfxpL70/edit?usp=drivesdk
-
-# Figma Board 
-
-https://www.figma.com/file/Wg0M5JNp6Aq3gq9IsJ3YYY/Price-Compare-Project-PricingHub-Team-25?fuid=1132565527119087761
-
-# List of Assigned Task
-
-https://docs.google.com/spreadsheets/u/0/d/11kKhgiG3PW7yRytWT_wq-VMQh-GHfWiOyTE-bG9rpTE/htmlview#gid=0
-
-# Database Schema 
-
-https://www.figma.com/file/Wg0M5JNp6Aq3gq9IsJ3YYY/Price-Compare-Project-PricingHub-Team-25?node-id=1%3A936
+# Recommended Links
+<a href="https://docs.google.com/document/u/0/d/10qsoyBd0oL_cO02p2cD-qYHt94uvzGGtjPwSZJlzEYU/mobilebasic" target="_blank">Project Documentation</a>
+<a href="https://docs.google.com/presentation/d/1DjNxjVHMToqwqUbdlc4emv6zCfOb2M0FAjxUpfxpL70/edit?usp=drivesdk" target="_blank">First Presentation Slides</a>
+<a href="https://www.figma.com/file/Wg0M5JNp6Aq3gq9IsJ3YYY/Price-Compare-Project-PricingHub-Team-25?fuid=1132565527119087761" target="_blank">Figma Board</a>
+<a href="https://docs.google.com/spreadsheets/u/0/d/11kKhgiG3PW7yRytWT_wq-VMQh-GHfWiOyTE-bG9rpTE/htmlview#gid=0" target="_blank">List of Assigned Tasks</a>
+<a href="https://www.figma.com/file/Wg0M5JNp6Aq3gq9IsJ3YYY/Price-Compare-Project-PricingHub-Team-25?node-id=1%3A936" target="_blank">Database Schema</a>
 
 # Price Compare Project (Pricing Hub) by Team 25
 A webscraper for the Django Framework that compares the product prices for three Nigeria Online Shops.
