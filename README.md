@@ -50,4 +50,9 @@ Pricing Hub uses a webscraping script that traverses through the URLs of the Lea
 # Credits
 We'd like to thank The Zuri Team for creating this platform and coming up with this project idea.
 
-<h6>Inserts List Of Team Name</h6>
+### Team 25
+| Names | Slack Username|
+| Samuel Adepoju | @Sammydepoj |
+| Abigail Asuquo | @AnniesDsigns |
+| Promise Udia | @Parah |
+| Noah Useghan | @RedX |
