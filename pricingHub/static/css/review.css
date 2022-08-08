@@ -1,0 +1,235 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 2px solid gray; */
+  }
+  
+  header{
+    width: 100%;
+    padding: 2em 3em;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 0em 3em 0em 0em;
+  }
+  .logo span{
+    align-self: flex-start;
+    font-size: 2rem;
+    margin: 0em 0em 0em .5em;
+    /* font-weight: bolder; */
+  }
+  nav{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: 600;
+  }
+  nav ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .primary-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3em;
+    flex-wrap: wrap;
+  }
+  li{
+    list-style-type: none;
+    margin:0em 1em;
+  }
+  
+  main{
+    padding: 10px;
+    width: 80%;
+    margin: 100px auto;
+    
+  }
+  
+  h1{
+    /* What our users say */
+    text-align: center;
+    margin: 10px 0;
+    /* Bold Heading Styles 2 */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    /* identical to box height */
+    /* Text colour styles 6 */
+    color: #121212;
+  
+  }
+  
+  /* GRID */
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  
+  
+  .users-box{
+    margin: 20px 30px;
+    padding: 10px 20px;
+    border: 0.4px solid #B0B0B0;
+    /* box-shadow: 4px 4px 42px 4px rgba(0, 0, 0, 0.04); */
+    border-radius: 10px;
+  }
+  .user-details{
+    padding: 10px 0;
+  }
+  
+  .users-rate{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .user-details h2,
+  .user-details p{
+    margin: 10px 0;
+  }
+  .users-rate>p{
+    color: #AAAAAA;
+    font-size: 16px;
+  }
+  
+  .see-more{
+    display: flex;
+    justify-content: flex-end;
+  }
+  #see-less{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: white;
+    color:#001233;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Poppins";
+  
+  }
+  
+  /* Rating Icon Style */
+  
+  .checked {
+      color: orange;
+      background-color: white;
+  }
+  
+  
+  /* RATING SECTION*/
+  
+  #hear-from-you{
+  text-align: center;
+  margin: 20px 0px;  
+  
+  /* Bold Body Text 3 */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 33px;
+  
+  /* Text colour styles 2 */
+  color: #121212;
+  
+  }
+  
+  
+  #leave-comment{
+    margin: 20px 0;
+  /* Bold Body Text 3 */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+  
+  }
+  
+  .text-area{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #textarea{
+    width: 80%;
+    height: 40vh; 
+    resize: vertical;
+  }
+  
+  .rating-bottom{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .rating{
+    margin: 20px 0;
+  }
+  .post-btn{
+    background: #C96E2C;
+    border-radius: 8px;
+    border: #C96E2C;
+    padding: 15px 25px;
+  }
+  
+  
+  
+  
+  
+  /* MEDIA QUERIES */
+  
+  @media (max-width:800px){
+    h1{
+      font-size: 30px; 
+    }
+  
+    .grid-container{
+      grid-template-columns: 1fr;
+    }
+    
+    #leave-comment{
+      text-align: center;
+    }
+  
+    #textarea{
+      width: 80%;
+      height: 20vh;
+      margin: 0 auto;
+      resize: vertical;
+    }
+  
+    .rating-bottom{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media(max-width:481px){
+    main{width: 90%;
+    }
+  
+    .users-rate{
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: center;
+    }
+  
+    .users-box{
+      width: 80%;
+    }
+  }

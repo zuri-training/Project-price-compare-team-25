@@ -1,93 +1,82 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Register</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/styleloginCA.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
+<header>
+   
+        <div class="logo">
+            <p class="logo"><img src="../static/assets/@Pricehub-05 1 (1).png" /></p>
+          </div>
+          <div class="navigation">
+            <p class="navig"><a href="">Home</a></p>
+            <p class="navig"><a href="">Categories</a></p>
+            <p class="navig"><a href="">Contact Us</a></p>
+          </div>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Sign Up</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="login">Login
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Register
-              <span class="sr-only">(current)</span>
-	    </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  
+</header>
+<main>
+   <section class="container-fluid" id="reg">
+    
+       <div class="reg-form">
+            <h2>Create account</h2>
+            <form method="POST" action="signup">
+                {% csrf_token %}
+                <div class="sec">
+                    <label for="name">Full name</label><br>
+                    <input type="text" class="size" placeholder="input your full name" name="username" required>
+                </div>
 
-<div class="container">
-  <h2>Register</h2>
+                <div class="sec">
+                    <label for="email">Email Address</label><br>
 
-  <div>
-    <style>
-      h5{
-        padding-bottom: 10px;
-        color: red;
-      }
-    </style>
-    {% for message in messages %}
-    <h5>{{message}}</h5>
-    {% endfor %}
-  </div>
+                    <input type="text" class="size" placeholder="enter your mail address" name="email" autocapitalize="none" autocomplete="email" required>
+                </div>
 
-  <form method="POST" action="register">
-    {% csrf_token %}
-    <div class="form-group">
-      <label for="username">Username:</label>
-      <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
-    </div>
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
-    </div>
-    <div class="form-group">
-      <label for="rpwd">Repeat Password:</label>
-      <input type="password" class="form-control" id="rpwd" placeholder="Repeat password" name="password2">
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-</div>
+                <div class="sec">
+                    <label for="password">Password</label><br>
+                    <input type="password" class="size" name="password" placeholder="input password" autocomplete="current-password" id="password" required>
+                   
+                </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="{% static 'vendor/jquery/jquery.slim.min.js' %}"></script>
-  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+                <div class="sec">
+                    <label for="password">Repeat Password</label><br>
+                    <input type="password" class="size" name="password" placeholder="input password" autocomplete="current-password" id="password2" required>
+                   
+                </div>
 
+                <div class="sec">
+                    <input type="checkbox" name="accept-privacy" id="accept-privacy" checked>
+                    <label for="accept-privacy">I accept the  <a href="#privacy-policy">Privacy Policy</a> and <a href="#terms">Terms and Conditions</a></label>
+                </div>
+
+                <div class="sec">
+                    <input type="checkbox" name="accept-notify" id="notify">
+                    <label for="notify">I want to receive notifications on new updates, sales and events on PricingHub</label>
+                </div>
+
+                <div class="submit">
+                    <button type="submit">Create Account</button>
+                </div>   
+
+                <div class="cta">
+                    <p>Already have a PricingHub account? <a href="{% url 'login' %}">Login account</a></p>
+                </div>
+            </form>
+       </div>
+
+       <div class="side-image">
+            <img src="../static/assets/images/hhh-removebg-preview 1.png" alt="lady smiling">
+       </div>
+   </section>   
+</main>
 </body>
-
 </html>
