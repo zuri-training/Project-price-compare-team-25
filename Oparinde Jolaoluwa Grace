@@ -1,0 +1,25 @@
+Aside from making research on what our project entails and proofreading of our documentation;
+I was assigned to check how to consume the API of some platforms (e-commerce such as jumia, jiji, konga)
+
+As a developer, i developed some pages FrontEnd using HTML,CSS and JAVASCRIPT
+
+I developed the RESET PASSWORD PAGE
+https://github.com/zuri-training/Project-price-compare-team-25/blob/main/pricingHub/templates/reset_password.html
+
+I developed the CREATE NEW PASSWORD PAGE
+https://github.com/zuri-training/Project-price-compare-team-25/blob/main/pricingHub/templates/create_new_password.html
+
+I developed the VERIFICATION PAGE
+https://github.com/zuri-training/Project-price-compare-team-25/blob/main/pricingHub/templates/verify_account.html
+
+I developed the HELP PAGE
+https://github.com/zuri-training/Project-price-compare-team-25/blob/main/pricingHub/templates/help.html
+
+I developed the LOGIN PAGE
+https://github.com/zuri-training/Project-price-compare-team-25/blob/main/pricingHub/templates/login.html
+
+I developed the CREATE ACCOUNT PAGE
+https://github.com/zuri-training/Project-price-compare-team-25/blob/main/pricingHub/templates/register.html
+
+I am currently working with two other team member to develop the category page 
+https://github.com/zuri-training/Project-price-compare-team-25/blob/main/pricingHub/templates/category.html
