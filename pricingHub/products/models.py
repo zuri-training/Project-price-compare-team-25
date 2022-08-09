@@ -1,7 +1,7 @@
 from audioop import reverse
 from django.db import models
 
-# Create your models here.
+
 class Category(models.Model):
     name = models.CharField(max_length=150, db_index=True)
     slug = models.SlugField(max_length=50, unique=True, db_index=True)
@@ -16,8 +16,6 @@ class Category(models.Model):
 
     def get_absolute_url(self):
         return reverse('products:filtered_products', args=[self.slug])
-
-
 
     def __str__(self):
         return self.name
@@ -49,3 +47,12 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
+
+class Comment(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    name = models.CharField(max_length=20)
+    comment_text = models.TextField(max_length=200)
+    date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return '%s - %s' % (self.product.name, self.name)
