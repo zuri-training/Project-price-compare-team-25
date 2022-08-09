@@ -26,7 +26,7 @@ header {
   .head{
   /* display: flex;
   justify-content: space-between; */
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: "open sans";
   font-weight: 500;
   background-color: #2b4880;
@@ -376,6 +376,9 @@ header {
   .comments {
     color: rgb(126, 124, 124);
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .view-in-category {
     margin: 0.5em 3em;
@@ -396,7 +399,7 @@ header {
   }
   .tips {
     background-color: #CCD3E0;
-    padding: 1em;
+    padding: 0em;
     font-family: 'open sans';
   }
   .tips-img{

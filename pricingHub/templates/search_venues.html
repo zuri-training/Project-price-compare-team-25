@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Venues</title>
+</head>
+<body>
+    <center>
+        {% if searched %}
+            <p>You searched for {{searched}}</p>
+            {% for product in products %}
+                {{product}} <br>
+            {% endfor %}
+        {% else %}
+            <p>You didn't search anything</p>
+        {% endif %}
+    </center>
+</body>
+</html>
