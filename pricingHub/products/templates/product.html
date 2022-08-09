@@ -18,3 +18,8 @@
     {%endfor%}
 </UL>
 
+<form method="POST"  action="{% url 'postcomment'%}">
+ {% csrf_token %}
+       {{form}}
+       <input type="submit" name="Submit">
+   </form>

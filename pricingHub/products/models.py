@@ -1,5 +1,6 @@
 from audioop import reverse
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Category(models.Model):
@@ -25,6 +26,7 @@ class Product(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     name = models.CharField(max_length=100, db_index=True)
     slug = models.SlugField(max_length=50, db_index=True)
+    product_detail = models.CharField(max_length=200, default='detail')
 
     url_jumia = models.CharField(max_length=250, db_index=True)
     url_konga = models.CharField(max_length=250, db_index=True)
@@ -50,6 +52,7 @@ class Product(models.Model):
 
 class Comment(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    #name = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=20)
     comment_text = models.TextField(max_length=200)
     date = models.DateTimeField(auto_now_add=True)
