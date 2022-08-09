@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'app',
     'accounts',
     'comments',
-    'products',
+    'products.apps.ProductsConfig',
     'search',
 ]
 

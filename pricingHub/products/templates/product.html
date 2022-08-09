@@ -1,0 +1,25 @@
+<h1>PRODUCTS</h1>
+
+<UL>
+    {% for items in categories %}
+        <l1>{{items.name}} (#{{items.slug}})</l1>
+    {%endfor%}
+</UL>
+
+<UL>
+    {% for items in products%}
+        <l1>{{items.name}} (#{{items.slug}})</l1>
+    {%endfor%}
+</UL>
+
+<UL>
+    {% for items in comments %}
+        <l1>{{items.comment_text}} (#{{items.name}})</l1>
+    {%endfor%}
+</UL>
+
+<form method="POST"  action="{% url 'postcomment'%}">
+ {% csrf_token %}
+       {{form}}
+       <input type="submit" name="Submit">
+   </form>
