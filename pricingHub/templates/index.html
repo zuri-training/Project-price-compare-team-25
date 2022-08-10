@@ -17,11 +17,11 @@
           /></a>
           <nav id="main-menu">
             <ul>
-              <li><a href="#">Home</a></li>
+              <li><a href="{% url 'homepage'%}">Home</a></li>
               <li><a href="#">Categories</a></li>
               <li><a href="#">Contact Us</a></li>
-              <li><a href="#">LogIn</a></li>
-              <li class="signup"><a href="#">Sign-up</a></li>
+              <li><a href="{% url 'login'%}">LogIn</a></li>
+              <li class="signup"><a href="{% url 'register'%}">Sign-up</a></li>
             </ul>
           </nav>
         </div>
@@ -104,11 +104,7 @@
     </header>
 
     <div class="search">
-      <form action="{% url 'search-venues' %}" method="post">
-        {% csrf_token %}
-        <input type="search" placeholder="Hi, what are you looking for?"  name="searched"/>
-        <button type="submit" style="border-radius: 5px; background:lilac; color: purple; border: purple solid 1px;">Search</button>  
-      </form>
+      <input type="text" placeholder="Hi, what are you looking for?" />
     </div>
 
     <main>
