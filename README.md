@@ -78,6 +78,6 @@ We'd like to thank The Zuri Team for creating this platform and coming up with t
 | Agata Uzoamaka Arukweh   | @karaagalliasis         |
 | Oluwole Nelson           | @Nelson                 |
 | Olamide Oso              | @VicvekSr               |
-| Funsho Jesudarasini      | @Ayobanjo   |
-|Mogbolu john-johanan      | @jj 
-           |
+| Funsho Jesudarasini      | @Ayobanjo               |
+|Mogbolu john-johanan      | @jj                     |
+
