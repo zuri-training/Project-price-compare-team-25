@@ -1,0 +1,6 @@
+I did research on our project (price comaparison project) and on web scraping.
+i worked on creating the database, scraping and the code to fetch from and 
+store price values on database.
+I contributed to the documentation.
+I worked on integrating frontend components with backend.
+https://github.com/zuri-training/Project-price-compare-team-25/tree/backend

@@ -57,3 +57,14 @@ We'd like to thank The Zuri Team for creating this platform and coming up with t
 | Abigail Asuquo | @AnniesDsigns |
 | Promise Udia | @Parah |
 | Noah Useghan | @RedX |
+| Anozie Chinonso | @somie |
+| Biniyam Melaku | @Biniyam |
+| Esther Olajide | @Estie |
+| Moyosore Silete Adeniji | @Moyosore |
+| Edikan Akpan | @Edikan |
+| Amazing-Grace Dare-Ojo | @Amazing-Grace Dare-Ojo|
+| Oparinde Jolaoluwa Grace | @JolaoluwaGrace |
+| Brian Kamunya Ngatia | @Brian Kamunya |
+| Agata Uzoamaka Arukweh | @karaagalliasis |
+| Oluwole Nelson | @Nelson |
+| Olamide Oso | @VicvekSr |
