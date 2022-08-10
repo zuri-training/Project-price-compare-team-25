@@ -39,9 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app',
     'accounts',
-    'comments',
     'products.apps.ProductsConfig',
     'search',
+    'reviews'
 ]
 
 MIDDLEWARE = [

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../static/styles/index.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
     <title>Home</title>
   </head>
 
@@ -17,11 +19,11 @@
           /></a>
           <nav id="main-menu">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Categories</a></li>
+              <li><a href="{% url 'homepage'%}">Home</a></li>
+              <li><a href="{% url 'category'%}">Categories</a></li>
               <li><a href="#">Contact Us</a></li>
-              <li><a href="#">LogIn</a></li>
-              <li class="signup"><a href="#">Sign-up</a></li>
+              <li><a href="{% url 'login'%}">LogIn</a></li>
+              <li class="signup"><a href="{% url 'register'%}">Sign-up</a></li>
             </ul>
           </nav>
         </div>
@@ -32,11 +34,11 @@
           <nav id="sidebar-menu">
             <h3>Menu</h3>
             <ul>
-              <li><a href="#">Home</a></li>
+              <li><a href="{% url 'homepage'%}">Home</a></li>
               <li><a href="#">Categories</a></li>
               <li><a href="#">Contact Us</a></li>
-              <li><a href="#">LogIn</a></li>
-              <li class="signup"><a href="#">Sign-up</a></li>
+              <li><a href="{% url 'login'%}">LogIn</a></li>
+              <li class="signup"><a href="{% url 'register'%}">Sign-up</a></li>
             </ul>
           </nav>
         </label>
@@ -104,11 +106,7 @@
     </header>
 
     <div class="search">
-      <form action="{% url 'search-venues' %}" method="post">
-        {% csrf_token %}
-        <input type="search" placeholder="Hi, what are you looking for?"  name="searched"/>
-        <button type="submit" style="border-radius: 5px; background:lilac; color: purple; border: purple solid 1px;">Search</button>  
-      </form>
+      <input type="text" placeholder="Hi, what are you looking for?" />
     </div>
 
     <main>
@@ -387,7 +385,7 @@
               providing viable solutions to the problems faced by indiduals who
               find it difficult getting the right pricings to items sold online.
             </p>
-            <button class="about-us-btn">About Us</button>
+            <button class="about-us-btn"><a href="{% url 'about'%}"> About Us<a></button>
           </div>
         </div>
       </section>
@@ -395,8 +393,8 @@
       <section class="new-product-release categories">
         <div class="heading__categories">What Our Users Say</div>
         <div class="testimonial">
-          <div class="new-products">
-            <div class="menu-with-img">
+          <div class="testimonial-card">
+            <div class="testimonial-card-img">
               <img src="../static/images/user1.png" alt="" />
             </div>
             <div class="ratings">
@@ -416,8 +414,8 @@
             </div>
           </div>
 
-          <div class="new-products">
-            <div class="menu-with-img">
+          <div class="testimonial-card">
+            <div class="testimonial-card-img">
               <img src="../static/images/user2.png" alt="" />
             </div>
             <div class="ratings">
@@ -437,8 +435,8 @@
             </div>
           </div>
 
-          <div class="new-products">
-            <div class="menu-with-img">
+          <div class="testimonial-card">
+            <div class="testimonial-card-img">
               <img src="../static/images/user3.png" alt="" />
             </div>
             <div class="ratings">
@@ -529,5 +527,8 @@
     </footer>
 
     <script src="../static/scripts/index.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script> -->
   </body>
 </html>

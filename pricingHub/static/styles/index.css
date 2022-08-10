@@ -213,10 +213,10 @@ header {
   .img-container1 {
     background-color: #002366;
     background-image: url('images/slider-1.png');
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
     background-repeat:0 0;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
   .img-container2 {
     background-color: #1960e4;
@@ -460,6 +460,10 @@ header {
     font-weight: bold;
     margin:1em 3em;
   }
+  .about-us-btn a{
+    color: white;
+    font-weight: bold;
+  }
   .newsletter {
     background-color: rgb(206, 204, 204);
     padding: 2em;
@@ -509,15 +513,6 @@ header {
 }
 
 
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 980px) {
   #main-menu {
     display: none;
@@ -540,10 +535,15 @@ header {
   margin: 0px 1em 0em 0em;  
   z-index: 9;
 }
+}
 
+
+
+
+@media screen and (max-width: 600px) {
   .new-product-release__product {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0em;
     margin: 0em;
@@ -572,7 +572,7 @@ header {
     text-align: center;
 }
   .tips-img img{
-    width: 90%;
+    width: 100%;
 }
 .tips-text {
     margin: 0em 1em;
@@ -611,11 +611,57 @@ header {
     padding: 1em 3em;
     margin:1em auto;
   }
+  .testimonial{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:0em;
+  }
+  .testimonial-card{
+    text-align: center;
+    width: 50%;
+    border: 1px solid rgb(107, 106, 106);
+    border-radius: 1em;
+    margin: .5em;
+    padding: 1.5em;
+  }
+  .testimonial-card-img img{
+    width: 100%;
+  }
   .testimonial-comment{
     text-align: center;
   }
+  .newsletter{
+    display: flex;
+    padding: .5em;
+  }
+  .newsletter-text h3{
+    font-size: 1rem;
 }
-@media screen and (max-width: 400px)  and (min-width: 716px) {
+  .newsletter-img{
+    width: 50%;
+    margin-right: .2em;
+  }
+  .newsletter-img img{
+    width: 80%;
+  }
+  .newsletter-text{
+    width: 100%;
+}
+.newsletter-email {
+  width: 90%;
+  text-align: center;
+}
+.subscribe {
+  padding: 1em 5em;
+  background-color: inherit;
+  margin: 1em auto;
+  font-weight: bold;
+  border: 0.2em solid #c96e2c;
+}
+}
+
+/* @media screen and (max-width: 400px)  and (min-width: 716px) {
 
     .new-product-release__product {
         display: flex;
@@ -649,14 +695,12 @@ header {
         margin: 4em 10em 0em;
         font-weight: bold;
       }
-}
+} */
 
 @media screen and (min-width: 900px) and (max-width: 1400px) {
     
     #main-menu{
-
         margin-left: 2em;
-
     }
     .signup1 {
         background-color: #c96e2c;
