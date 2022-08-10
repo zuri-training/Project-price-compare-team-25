@@ -1,6 +1,6 @@
 # Team 25 Price Compare ( Pricing Hub) Project.
 
-Team 25 is designing and implementing a platform for comparing the prices of gadgets across three E-commerce platforms namely Kara ng, Konga, and Jumia. The website is expected to increase the sales on these platforms, serve as a key source of information by documenting price trends and generate leads and inquiries for these platforms.
+Team 25 is designing and implementing a platform for comparing the prices of new generation iphones across three E-commerce platforms namely Kara ng, Konga, and Jumia. The website is expected to increase the sales on these platforms, serve as a key source of information by documenting price trends and generate leads and inquiries for these platforms.
 
 # Recommended Links
 
