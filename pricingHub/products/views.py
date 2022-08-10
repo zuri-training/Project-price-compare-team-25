@@ -5,7 +5,7 @@ from . form import CommentForm, ProductForm
 
 def category(request):
     categories = Category.objects.all()
-    return render(request, 'index.html', {'categories': categories})
+    return render(request, 'category.html', {'categories': categories})
 
 
 def product(request):
@@ -38,4 +38,4 @@ def productdetail(request):
         return redirect('comment')
 
     else:
-        return render(request, 'productdetail.html', {'form': form})
+        return render(request, 'product_detail_page/product_detail.html', {'form': form})
