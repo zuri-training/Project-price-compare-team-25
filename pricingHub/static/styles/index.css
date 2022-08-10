@@ -412,7 +412,7 @@ header {
 .tips-text {
     margin: 0em 1em 0em 0em;
     font-size: 1rem;
-    line-height: 1.5em;
+    line-height: 1em;
   }
   .tips-text h3 {
     margin: 0em;
@@ -660,6 +660,103 @@ header {
 }
 }
 
+@media screen and (min-width: 601px) and (max-width: 890px){
+
+  .new-product-release__product {
+    display: flex;
+    /* justify-content: space-evenly; */
+    place-content: center;
+    place-items: center;
+    padding: 0em;
+    margin: 0em;
+    gap: 0.5em;
+    flex-wrap: wrap;
+  }
+  .menu-with-img img{
+    width: 100%;
+  }
+  .tips {
+    font-family: 'open sans';
+  }
+
+.tips-text {
+margin:1em 0em;
+font-size: 1.2rem;
+line-height: 2em;
+width: 90%;
+margin: 1em;
+}
+
+.tips-text h3 {
+margin: 0em 0em 0.2em;
+font-size: 1.8rem;
+line-height: 1.1em;
+width: 100%;
+font-family: 'open sans';
+overflow: hidden;
+}
+.tips-to-buy {
+list-style-type: disc;
+}
+.testimonial {
+  margin: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.testimonial-card{
+  text-align: center;
+  width: 70%;
+  border: 1px solid rgb(107, 106, 106);
+  border-radius: 1em;
+  margin: .5em;
+  padding: 1.5em;
+}
+.testimonial-card-img img{
+  width: 100%;
+}
+.testimonial-comment {
+  width: 100%;
+  color: black;
+}
+
+.newsletter{
+  display: flex;
+  padding: 2em 0em 0em 0em;
+}
+.newsletter-text h3{
+  font-size: 1.8rem;
+  margin: 1em 0em 1em;
+}
+.newsletter-img{
+  width: 50%;
+  margin-right: 0em;
+}
+.newsletter-img img{
+  width: 80%;
+}
+.newsletter-text{
+  width: 90%;
+  margin: 0em;
+}
+.newsletter-text div{
+text-align: center;
+}
+.newsletter-email {
+width: 90%;
+text-align: center;
+}
+.subscribe {
+padding: 1em 5em;
+background-color: inherit;
+margin: 2em auto 1em;
+font-weight: bold;
+border: 0.2em solid #c96e2c;
+}
+/* footer needs to be fixed for this screen size */
+
+}
+
 
 @media screen and (min-width: 900px) and (max-width: 1400px) {
     
@@ -667,10 +764,9 @@ header {
         margin-left: 5em;
     }
     #main-menu ul {
-      max-width: 800px;
       width: 100%;
       height: 100%;
-      margin: 0px 0px 0px 5em;
+      margin: 0px 0px 0px 0em;
     }
     .signup {
       border-radius: 0.2em;
