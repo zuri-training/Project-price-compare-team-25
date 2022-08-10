@@ -66,7 +66,8 @@ We'd like to thank The Zuri Team for creating this platform and coming up with t
 | Abigail Asuquo | @AnniesDsigns |
 | Promise Udia | @Parah |
 | Noah Useghan | @RedX |
-| Anozie Chinonso | @somie |
+| Anozie Chinonso | @Benadine |
+| Azu Chisom | @somie |
 | Biniyam Melaku | @Biniyam |
 | Esther Olajide | @Estie |
 | Moyosore Silete Adeniji | @Moyosore |
