@@ -339,12 +339,12 @@ header {
   .categories_series{
     background-color: #002366;
     padding: 1em 2.5em;
-    margin: 1em .2em;
+    margin: .2em .2em;
     font-weight: 500;
     font-size: .8rem;
     border-radius: .4em;
     color: white;
-    border: 1px solid rgb(56, 2, 2);
+    border: none
   }
   .new-products {
     margin: 0em;
@@ -513,7 +513,7 @@ header {
 }
 
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 800px) {
   #main-menu {
     display: none;
   }
@@ -555,7 +555,7 @@ header {
   .menu-with-img {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     margin: .5em auto;
     padding: 0em;
   }
@@ -661,41 +661,6 @@ header {
 }
 }
 
-/* @media screen and (max-width: 400px)  and (min-width: 716px) {
-
-    .new-product-release__product {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0em;
-        margin: 0em;
-        flex-wrap: wrap;
-      }
-      .new-product{
-        text-align: center;
-      }
-
-    .newsletter{
-        display: flex;
-    }
-    .newsletter-text{
-        margin: 1em 4em;
-    }
-    .newsletter-email {
-        padding: 1em;
-        margin-top: 3em;
-        width: 100%;
-        border: none;
-        border-radius: 0.5em;
-      }
-      .subscribe {
-        padding: 1em 5em;
-        background-color: inherit;
-        border-radius: 0.5em;
-        margin: 4em 10em 0em;
-        font-weight: bold;
-      }
-} */
 
 @media screen and (min-width: 900px) and (max-width: 1400px) {
     
@@ -758,34 +723,35 @@ header {
       color: #fff;
     }
     .tips {
-        background-color: #f4e2d5;
         display: flex;
         justify-content: space-evenly;
-        padding: 1em;
+        /* padding: 1em; */
         font-family: 'open sans';
       }
         .tips-img{
-    width: 50%;
+    width: 60%;
+    height: 100%;
+    margin-right: 0em;
 }
     .tips-img img{
       width: 100%;
+      height: 100%;
   }
-
-.tips-img img{
-    width: 100%;
-}
 .tips-text {
-  margin: 0em 1em;
-  font-size: 1.3rem;
+  margin:1em 0em;
+  font-size: 1.5rem;
   line-height: 2em;
   width: 50%;
+  
 }
+
 .tips-text h3 {
-    margin: 0em;
+    margin: 0em 0em 0.2em;
     font-size: 1.8rem;
-    line-height: 2em;
+    line-height: 1.2em;
     width: 100%;
     font-family: 'open sans';
+    overflow: hidden;
   }
 .tips-to-buy {
   list-style-type: disc;
@@ -808,11 +774,54 @@ header {
     display: flex;
     /* flex-wrap: wrap; */
   }
+  .testimonial-card{
+    text-align: center;
+    width: 50%;
+    border: 1px solid rgb(107, 106, 106);
+    border-radius: 1em;
+    margin: .5em;
+    padding: 1.5em;
+  }
+  .testimonial-card-img img{
+    width: 100%;
+  }
   .testimonial-comment {
     width: 100%;
-    font-weight: bold;
     color: black;
   }
+  .newsletter{
+    display: flex;
+    padding: 2em 0em 0em 0em;
+  }
+  .newsletter-text h3{
+    font-size: 1.8rem;
+    margin: 2em 0em 1em;
+}
+  .newsletter-img{
+    width: 50%;
+    margin-right: 0em;
+  }
+  .newsletter-img img{
+    width: 80%;
+  }
+  .newsletter-text{
+    width: 90%;
+    margin: 0em;
+}
+.newsletter-text div{
+  text-align: center;
+}
+.newsletter-email {
+  width: 90%;
+  text-align: center;
+}
+.subscribe {
+  padding: 1em 5em;
+  background-color: inherit;
+  margin: 2em auto 0em;
+  font-weight: bold;
+  border: 0.2em solid #c96e2c;
+}
 footer {
     background-color: #002366;
     color: white;
