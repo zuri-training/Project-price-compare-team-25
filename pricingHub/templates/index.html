@@ -106,7 +106,12 @@
     </header>
 
     <div class="search">
-      <input type="text" placeholder="Hi, what are you looking for?" />
+      <form action="{% url 'search-venues' %}" method="post">
+        {% csrf_token %}
+        <input type="search" placeholder="Hi, what are you looking for?" name="searched" />
+        <button type="submit" style="border-radius: 5px; background:lilac; color: purple; border: purple solid 1px;">Search</button>  
+      </form>
+      
     </div>
 
     <main>
