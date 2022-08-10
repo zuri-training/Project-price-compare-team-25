@@ -80,7 +80,6 @@ header {
 }
 
   .signup {
-    padding: 0.05em ;
     border-radius: 0.2em;
     background-color: #c96e2c;
     padding: 0.2em 1.5em ;
@@ -665,7 +664,18 @@ header {
 @media screen and (min-width: 900px) and (max-width: 1400px) {
     
     #main-menu{
-        margin-left: 2em;
+        margin-left: 5em;
+    }
+    #main-menu ul {
+      max-width: 800px;
+      width: 100%;
+      height: 100%;
+      margin: 0px 0px 0px 5em;
+    }
+    .signup {
+      border-radius: 0.2em;
+      background-color: #c96e2c;
+      padding: 0.2em 1.5em ;
     }
     .signup1 {
         background-color: #c96e2c;
