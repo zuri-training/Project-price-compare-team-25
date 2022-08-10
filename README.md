@@ -67,3 +67,9 @@ We'd like to thank The Zuri Team for creating this platform and coming up with t
 | Brian Kamunya Ngatia | @Brian Kamunya |
 | Agata Uzoamaka Arukweh | @karaagalliasis |
 | Oluwole Nelson | @Nelson |
+| Olamide Oso | @VicvekSr |
+| Iniobong Ekpenyong | @Jubilant |
+| Funsho Jesudarasimi | @Ayobanjo |
+| Gbolagade Ajarat | @Gatty |
+| Victoria Preye Iyakoregha | @Vicdesigns |
+| Mogbolu John-Johanan | @jj |
