@@ -32,11 +32,11 @@
           <nav id="sidebar-menu">
             <h3>Menu</h3>
             <ul>
-              <li><a href="#">Home</a></li>
+              <li><a href="{% url 'homepage'%}">Home</a></li>
               <li><a href="#">Categories</a></li>
               <li><a href="#">Contact Us</a></li>
-              <li><a href="#">LogIn</a></li>
-              <li class="signup"><a href="#">Sign-up</a></li>
+              <li><a href="{% url 'login'%}">LogIn</a></li>
+              <li class="signup"><a href="{% url 'register'%}">Sign-up</a></li>
             </ul>
           </nav>
         </label>
@@ -383,7 +383,7 @@
               providing viable solutions to the problems faced by indiduals who
               find it difficult getting the right pricings to items sold online.
             </p>
-            <button class="about-us-btn">About Us</button>
+            <button class="about-us-btn"><a href="{% url 'about'%}"> About Us<a></button>
           </div>
         </div>
       </section>
