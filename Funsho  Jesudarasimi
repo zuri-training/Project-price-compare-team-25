@@ -1,0 +1,32 @@
+Student Id: I4G003024QA8
+
+## Issue - Creation of Database Schema
+
+- I worked with the team assigned to draw out the schema diagram, and made research on how it should be done. Upon various iterations and changes, I came up with the widely accepted diagram, which is given in the issue solution below
+- https://github.com/zuri-training/Project-price-compare-team-25/issues/16#issue-1326023707
+  Solution to the issue
+- https://www.figma.com/file/Wg0M5JNp6Aq3gq9IsJ3YYY/Price-Compare-Project-PricingHub-Team-25?node-id=1%3A936
+
+## Issue - Django Template pages connection
+
+I was tasked with connecting the templates pages together
+https://github.com/zuri-training/Project-price-compare-team-25/issues/54
+
+## Issue - Integrate all frontend components with backend
+
+https://github.com/zuri-training/Project-price-compare-team-25/issues/49#issue-1332849808
+
+Solution
+https://github.com/zuri-training/Project-price-compare-team-25/commit/da8418188c723cce1c1262ddc057fc426c2ce7e4
+
+Non- issue contributions
+
+- I was "steadily" involved in unresolved error corrections.
+
+- I wrotes models for product app.
+  https://github.com/zuri-training/Project-price-compare-team-25/commit/1ae74f8a9b449b4c4858bba1bb934b2036b76c34
+
+- Properly linking codes in the views, models, url .py files to mitigate errors
+  https://github.com/zuri-training/Project-price-compare-team-25/commit/0298d92475897b83c4580991ced68b1a240c2dff
+
+https://github.com/zuri-training/Project-price-compare-team-25/commit/41c37e5b4127fd82f05819668f602945870cd0b6
