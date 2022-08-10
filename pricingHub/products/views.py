@@ -1,41 +1,13 @@
-from . models import Comment, Product, Category
-from django.shortcuts import render, redirect
-from . form import CommentForm, ProductForm
+from django.shortcuts import render, get_object_or_404
+from .models import Product, Category
+# create your views here
 
 
 def category(request):
-    categories = Category.objects.all()
-    return render(request, 'category.html', {'categories': categories})
+    category = Category.objects.all()
+    return render(request, "products/category.html", {"category": category})
 
 
-def product(request):
-    products = Product.objects.all()
-    return render(request, 'index.html', {'products': products})
-
-
-def comment(request):
-    comments = Comment.objects.all()
-    return render(request, 'product.html', {'comments': comments})
-
-
-def createcomment(request):
-    form = CommentForm
-    if request.method == 'POST':
-        form = CommentForm(request.POST or None)
-        if form.is_valid():
-            form.save()
-        return redirect('comment')
-
-    else:
-        return render(request, 'index.html', {'form': form})
-
-def productdetail(request):
-    form = ProductForm
-    if request.method == 'POST':
-        form = ProductForm(request.POST or None)
-        if form.is_valid():
-            form.save()
-        return redirect('comment')
-
-    else:
-        return render(request, 'product_detail_page/product_detail.html', {'form': form})
+def product_detail(request):
+    product_detail = Product.objects.all()
+    return render(request, "products/product_detail.html", {"product_detail": product_detail})
