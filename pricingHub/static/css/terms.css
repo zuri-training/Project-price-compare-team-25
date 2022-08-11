@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0em;
+  padding: 0em;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  padding: 0em;
+}
+.head{
+/* display: flex;
+justify-content: space-between; */
+font-size: 1.3rem;
+font-family: "open sans";
+font-weight: 500;
+background-color: #2b4880;
+align-self: center;
+width: 100%;
+}
+.logo {
+  margin: 0em 1em;
+}
+.top-header{
+  display: flex;
+  justify-content: space-between;
+}
+.top-header a{
+  width: 25%;
+}
+#main-menu {
+height: 100px;
+width: 70%;
+margin: 0px 1em 0em 0em;  
+z-index: 9;
+}
+
+#main-menu ul {
+max-width: 800px;
+width: 100%;
+height: 100%;
+margin: 0px 0px 0px 3em;
+padding: 0px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+z-index: 9;
+}
+
+#main-menu li {
+font-size: 1.2rem;
+margin: 0em;
+}
+
+#main-menu a {
+color: #fff;
+font-size: 1rem;
+text-decoration: none;
+margin: 0em;
+}
+
+#main-menu a:hover {
+text-decoration: underline;
+}
+.signup {
+  padding: 0.05em ;
+  border-radius: 0.2em;
+  background-color: #c96e2c;
+  padding: 0.2em 1.5em ;
+}
+.signup a {
+  color: white;
+}
+.signup1 {
+  background-color: #c96e2c;
+  padding: 0.4em  .5em;
+  border-radius: 0.5em;
+  width: 40%;
+  margin: 2em auto;
+}
+.signup1 a {
+  color: white;
+}
+/* harmburger */
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+  background: black;
+  z-index: -1;
+}
+
+#hamburger-input{
+display: none;
+}
+
+#hamburger-menu {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Cabin', Sans-serif;
+  background: linear-gradient(
+    to bottom, 
+    white, white 20%, 
+    #2b4880 20%, #2b4880 40%, 
+    white 40%, white 60%, 
+    #2b4880  60%, #2b4880  80%, 
+    white 80%, white 100%
+  );
+}
+
+#hamburger-menu #sidebar-menu {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 10px;
+  width: 200px;
+  height: 100%;
+  background-color: #2b4880;
+  transition: 0.3s;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+#hamburger-menu h3 {
+color: #fff;
+font-size: 2.2rem;
+}
+
+#hamburger-menu ul {
+padding-right: 0px;
+}
+
+#hamburger-menu li {
+line-height: 3rem;
+}
+
+#hamburger-menu a {
+color: #fff;
+font-size: 1.3rem;
+text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+text-decoration: underline;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+  visibility: visible;
+  right: 0;
+}
+#hamburger-input:checked ~ .overlay{
+ visibility: visible;
+opacity: 0.4;
+}
+
+li {
+  font-family: "open sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 200%;
+  text-align: justify;
+  color: #616161;
+}
+  
+
+h1{ 
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  color: #121212;
+}
+
+p {
+  text-align: justify;
+  font-family: "Open Sans";
+  font-size: 24px;
+  line-height: 200%;
+  font-weight: 700;
+  font-style: normal;
+  color: #ff8181;
+}
+
+h2{
+  text-align: justify;
+  font-family: "Poppins";
+  font-size: 24px;
+  line-height: 200%;
+  font-weight: 600;
+  font-style: normal;
+  color: #D2864F;
+}
+
+h3 {
+  text-align: justify;
+  font-family: "Open Sans";
+  font-size: 24px;
+  line-height: 200%;
+  font-weight: 700;
+  font-style: normal;
+  color: #800101;
+}
+
+footer {
+  background-color: #002366;
+  color: white;
+  padding: 1em;
+  line-height: 3em;
+  font-family: 'poppins';
+}
+.top-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.secondary-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2em;
+    gap: 2em;
+}
+.information{
+    margin: .2em 3em;
+    font-family: 'poppins';
+    width: 20%;
+    
+}
+.connect{
+  margin: .2em 3em;
+    font-family: 'poppins';
+    width: 30%;
+}
+.brandlogo{
+  padding: 0em;
+  margin-right: 0em;
+
+}
+.brandlogo img{
+  width: 100%;
+  
+}
+.contact-us button{
+    margin: 5em 10em;
+    padding: .7em 4em;
+    color:#fff;
+    text-align: center;
+    background-color: #c96e2c;
+    border: none;
+    border-radius: .3em ;
+    font-family: 'poppins';
+    font-weight: 500;
+}
+
+.primary-footer{
+    display: flex;
+    margin: 2em 4em 0em;
+    justify-content: space-between;
+}
+.primary-footer div a{
+    color: #fff;
+    margin-right: 4em;
+}
+
