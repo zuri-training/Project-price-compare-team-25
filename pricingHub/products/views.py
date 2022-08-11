@@ -1,6 +1,5 @@
 from . models import Comment, Product, Category
-from django.shortcuts import render, redirect
-from . form import CommentForm, ProductForm
+from django.shortcuts import render
 
 
 def category(request):
@@ -10,32 +9,9 @@ def category(request):
 
 def product(request):
     products = Product.objects.all()
-    return render(request, 'index.html', {'products': products})
+    return render(request, 'product.html', {'products': products})
 
 
 def comment(request):
     comments = Comment.objects.all()
     return render(request, 'product.html', {'comments': comments})
-
-
-def createcomment(request):
-    form = CommentForm
-    if request.method == 'POST':
-        form = CommentForm(request.POST or None)
-        if form.is_valid():
-            form.save()
-        return redirect('comment')
-
-    else:
-        return render(request, 'index.html', {'form': form})
-
-def productdetail(request):
-    form = ProductForm
-    if request.method == 'POST':
-        form = ProductForm(request.POST or None)
-        if form.is_valid():
-            form.save()
-        return redirect('comment')
-
-    else:
-        return render(request, 'product_detail_page/product_detail.html', {'form': form})
