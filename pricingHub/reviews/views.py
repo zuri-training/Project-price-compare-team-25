@@ -5,4 +5,4 @@ from .models import Review
 
 def review(request):
     reviews = Review.objects.all()
-    return render(request, '', {'reviews': reviews})
+    return render(request, 'review.html', {'reviews': reviews})
