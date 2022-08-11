@@ -540,6 +540,18 @@ header {
 
 
 @media screen and (max-width: 600px) {
+  .search {
+    display: flex;
+    justify-content: center;
+    margin: 2em 1.5em;
+  }
+  .search input {
+    padding: 1em 4em 1em 1em;
+    width: 80%;
+    background-color: rgb(241, 235, 235);
+    border: 0.02em solid black;
+    border-radius: 0.5em;
+  }
   .new-product-release__product {
     display: flex;
     justify-content: center;
@@ -618,7 +630,7 @@ header {
   }
   .testimonial-card{
     text-align: center;
-    width: 50%;
+    width: 90%;
     border: 1px solid rgb(107, 106, 106);
     border-radius: 1em;
     margin: .5em;
