@@ -78,7 +78,7 @@ span{
   }
 }
 
- @media(max-width:375){
+ @media(max-width:375px){
   main{
     font-size: 12px;
   }
