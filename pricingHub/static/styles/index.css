@@ -196,34 +196,16 @@ header {
     margin: 0;
     text-align: center;
   }
-  .img-container1,
-  .img-container2,
-  .img-container3 {
-    margin: 0em;
-    padding: 2em 2em;
-  }
+ 
   .heading {
     font-weight: bolder;
     line-height: 3rem;
     font-family: "poppins";
     font-size: 2rem;
     color: #fff;
-  }
-  .img-container1 {
-    background-color: #002366;
-    background-image: url('images/slider-1.png');
-    /* background-size: cover;
-    background-position: center;
-    background-repeat:0 0;
-    background-attachment: fixed; */
-}
-  .img-container2 {
-    background-color: #1960e4;
-    background-image: url('images/slider-2.png');
-  }
-  .img-container3 {
-    background-color: #5c8fee;
-    background-image: url('images/slider-3.png');
+     position: absolute;
+     bottom: 100px;
+     right:50px;
   }
   
   /* Next & previous buttons */
@@ -231,7 +213,7 @@ header {
   .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
@@ -266,7 +248,15 @@ header {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    position: absolute;
+     bottom: 80px;
+     left: 100px;
   }
+  /* .dots{
+    position: absolute;
+    left: 50px;
+    border: 1px solid yellow;
+  } */
   .active,
   .dot:hover {
     background-color: #111111;
@@ -308,7 +298,7 @@ header {
   .search {
     display: flex;
     justify-content: center;
-    margin: 2em auto;
+    margin: 1em auto;
   }
   .search input {
     padding: 1em 4em 1em 1em;
@@ -378,6 +368,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.3em;
   }
   .view-in-category {
     margin: 0.5em 3em;
@@ -540,6 +531,17 @@ header {
 
 
 @media screen and (max-width: 600px) {
+
+  .heading {
+    font-weight: bolder;
+    line-height: 2.2rem;
+    font-family: "poppins";
+    font-size: 1.5rem;
+    color: #fff;
+     position: absolute;
+     bottom: 250px;
+     right:20px;
+  }
   .search {
     display: flex;
     justify-content: center;
@@ -672,8 +674,28 @@ header {
 }
 }
 
-@media screen and (min-width: 601px) and (max-width: 890px){
+@media screen and (min-width: 601px) and (max-width: 899px){
 
+  .heading {
+    font-weight: bolder;
+    line-height: 2.3rem;
+    font-family: "poppins";
+    font-size: 1.7rem;
+    color: #fff;
+     position: absolute;
+     bottom: 150px;
+     right:20px;
+  }
+  .signup1 {
+    background-color: #c96e2c;
+    padding: 0.4em ;
+    border-radius: 0.3em;
+    width: 30%;
+    margin: 2em auto;
+    position: absolute;
+    bottom: 60px;
+    right: 45px;
+  }
   .new-product-release__product {
     display: flex;
     /* justify-content: space-evenly; */
@@ -791,6 +813,9 @@ border: 0.2em solid #c96e2c;
         border-radius: 0.3em;
         width: 20%;
         margin: 2em auto;
+        position: absolute;
+        bottom: 30px;
+        right: 55px;
       }
       .signup1 a {
         color: white;

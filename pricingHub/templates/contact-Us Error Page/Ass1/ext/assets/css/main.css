@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*, html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  width: 100%;
+  height: 70px;
+  background: #2B4880;
+  padding: 0 5%;
+}
+
+.nav__logo {
+  float: left;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+.nav__logo img {
+  width: 180px;
+  height: 70px;
+}
+
+.nav__items {
+  float: right;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.nav__items ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__items ul li {
+  margin-left: 3.5vw;
+  list-style: none;
+}
+
+.nav__items ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__items ul li a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  height: calc(100vh - 118px);
+  background: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+}
+
+.main__image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main__form {
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  padding-left: 7%;
+}
+
+.main__form-top {
+  padding-right: 40%;
+}
+
+.main__form-top section {
+  width: 50px;
+  height: 5px;
+  background: #000;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.main__form-top p {
+  margin-block: 20px;
+}
+
+.main__form-top form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__form-top form input {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  height: 30px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.main__form-top form textarea {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 0.9rem;
+  font-family: sans-serif;
+}
+
+.main__form-top form input[type="submit"] {
+  background: #C96E2C;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.main__form-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2%;
+  margin-top: 20px;
+}
+
+.main__form-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1vw;
+}
+
+.main__form-section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*For The Responsiveness*/
+@media only screen and (max-width: 950px) {
+  .main {
+    height: calc(100vh - 118px);
+    background: #fff;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .main__image {
+    display: none;
+  }
+  .main__form-top {
+    padding-right: 7%;
+  }
+  .main__form-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .main__form-section:not(:last-child) {
+    margin-bottom: 5%;
+  }
+  .nav__logo img {
+    width: 90px;
+    height: 35px;
+  }
+  .nav__items {
+    float: right;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .nav__items ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav__items ul li {
+    margin-left: 3.5vw;
+    list-style: none;
+  }
+  .nav__items ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .nav__items ul li a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .main {
+    height: calc(100vh - 118px);
+    background: #fff;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .main__logo img {
+    width: 100px;
+    height: 40px;
+  }
+}
+
+/*End of Responsiveness*/
+/*# sourceMappingURL=main.css.map */
