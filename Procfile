@@ -1,1 +1,1 @@
-web: gunicorn pricingHub.wsgi
+web: python pricingHub/manage.py runserver 0.0.0.0:5000
