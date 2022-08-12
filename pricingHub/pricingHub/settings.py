@@ -145,4 +145,4 @@ EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'TestSite Team <noreply@example.com>'
 
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
