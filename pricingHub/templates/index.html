@@ -35,7 +35,7 @@
             <h3>Menu</h3>
             <ul>
               <li><a href="{% url 'homepage'%}">Home</a></li>
-              <li><a href="#">Categories</a></li>
+              <li><a href="{% url 'category'%}">Categories</a></li>
               <li><a href="#">Contact Us</a></li>
               <li><a href="{% url 'login'%}">LogIn</a></li>
               <li class="signup"><a href="{% url 'register'%}">Sign-up</a></li>
@@ -176,7 +176,7 @@
               <img src="../static/images/comment symbol.png" alt="" />
               <span>Comments</span>
             </div>
-            <button class="view-in-category">View in Category</button>
+            <button class="view-in-category"> <a href="{% url 'product_details'%}">Compare Product</a></button>
           </div>
 
           <div class="new-products">
@@ -210,7 +210,9 @@
               <img src="../static/images/comment symbol.png" alt="" />
               <span>Comments</span>
             </div>
-            <button class="view-in-category">View in Category</button>
+            <button class="view-in-category">
+              <a href="{% url 'product_details'%}">Compare Product</a>
+            </button>
           </div>
 
           <div class="new-products">
@@ -245,7 +247,7 @@
               <span>Comments</span>
             </div>
             <button class="view-in-category">
-              <a href="product_detail.html">Compare Product</a>
+              <a href="{% url 'product_details'%}">Compare Product</a>
             </button>
           </div>
 
