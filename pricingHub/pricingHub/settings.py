@@ -7,12 +7,12 @@ For more information on this file, see
 https://docs.djangoproject.com/en/4.0/topics/settings/
 
 For the full list of settings and their values, see
-https://docs.djangoproject.com/en/4.0/ref/settings/
+https://docs.djangoproject.com/en/4.0/ref/settings/gi
 """
 import os
 import django_heroku
 import dj_database_url
-from decouple import config
+#from decouple import config
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -135,7 +135,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-zuritrainin-projectpric-ugcgvlnxje4.ws-eu54.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-zuritrainin-projectpric-k2zxyfuo5vl.ws-eu60.gitpod.io']
 
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_PORT = 587

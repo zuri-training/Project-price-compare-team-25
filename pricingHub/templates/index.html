@@ -23,7 +23,7 @@
               <li><a href="{% url 'category'%}">Categories</a></li>
               <li><a href="#">Contact Us</a></li>
               <li><a href="{% url 'login'%}">LogIn</a></li>
-              <li class="signup"><a href="{% url 'register'%}">Sign-up</a></li>
+             <li class="signup"><a href="{% url 'signup'%}">Sign-up</a></li>
             </ul>
           </nav>
         </div>
@@ -35,10 +35,10 @@
             <h3>Menu</h3>
             <ul>
               <li><a href="{% url 'homepage'%}">Home</a></li>
-              <li><a href="#">Categories</a></li>
+              <li><a href="{% url 'category'%}">Categories</a></li>
               <li><a href="#">Contact Us</a></li>
               <li><a href="{% url 'login'%}">LogIn</a></li>
-              <li class="signup"><a href="{% url 'register'%}">Sign-up</a></li>
+              <li class="signup"><a href="{% url 'signup'%}">Sign-up</a></li>
             </ul>
           </nav>
         </label>
@@ -56,7 +56,7 @@
                 Luxury iPhone Series
               </h1>
 
-              <div class="signup1"><a href="{% url 'register'%}">Create Free Account</a></div>
+              <div class="signup1"><a href="{% url 'signup'%}">Create Free Account</a></div>
 
               <br />
               <!-- <div class="dots" style="text-align: left">
@@ -76,7 +76,7 @@
                 Gadget Lifetyle?
               </h1>
 
-              <div class="signup1"><a href="{% url 'register'%}">Create Free Account</a></div>
+              <div class="signup1"><a href="{% url 'signup'%}">Create Free Account</a></div>
 
               <br />
               <!-- <div class="dots" style="text-align: left">
@@ -96,7 +96,7 @@
                 Be Your Own Influencer<br />Take The Best Pictures On The Go
               </h1>
 
-              <div class="signup1"><a href="{% url 'register'%}">Create Free Account</a></div>
+              <div class="signup1"><a href="{% url 'signup'%}">Create Free Account</a></div>
               <br />
               <!-- <div class="dots" style="text-align: left">
                 <span class="dot" onclick="currentSlide(1)"></span>
@@ -176,7 +176,7 @@
               <img src="../static/images/comment symbol.png" alt="" />
               <span>Comments</span>
             </div>
-            <button class="view-in-category">View in Category</button>
+            <button class="view-in-category"> <a href="{% url 'product_details'%}">Compare Product</a></button>
           </div>
 
           <div class="new-products">
@@ -210,7 +210,9 @@
               <img src="../static/images/comment symbol.png" alt="" />
               <span>Comments</span>
             </div>
-            <button class="view-in-category">View in Category</button>
+            <button class="view-in-category">
+              <a href="{% url 'product_details'%}">Compare Product</a>
+            </button>
           </div>
 
           <div class="new-products">
@@ -245,7 +247,7 @@
               <span>Comments</span>
             </div>
             <button class="view-in-category">
-              <a href="product_detail.html">Compare Product</a>
+              <a href="{% url 'product_details'%}">Compare Product</a>
             </button>
           </div>
 
@@ -419,6 +421,7 @@
               </span>
             </div>
             <div class="comments-testimonial">
+              <h4 class='comments-name'>Morgan</h4>
               <p class="testimonial-comment">
                 Ever since I discovered this website, shopping online has been
                 easier.
@@ -440,6 +443,7 @@
               </span>
             </div>
             <div class="comments-testimonial">
+              <h4 class='comments-name'>Halley</h4>
               <p class="testimonial-comment">
                 Ever since I discovered this website, shopping online has been
                 easier.
@@ -461,6 +465,7 @@
               </span>
             </div>
             <div class="comments-testimonial">
+              <h4 class='comments-name'>Judas</h4>
               <p class="testimonial-comment">
                 Ever since I discovered this website, shopping online has been
                 easier.
@@ -500,26 +505,25 @@
           <div class="information">
             <h3>Menu</h3>
             <ul>
-              <li>Services</li>
-              <li>Review</li>
-              <li>About</li>
-              <li>Support</li>
+              <li><a>Services</a></li>
+              <li><a href="{% url 'about'%}">About</a></li>
+              <li><a>Support</a></li>
             </ul>
           </div>
 
           <div class="connect">
             <h3>Connect</h3>
             <ul>
-              <li>LinkedIn</li>
-              <li>Twitter</li>
-              <li>Facebook</li>
-              <li>Instagram</li>
+              <li><a>LinkedIn</a></li>
+              <li><a>Twitter</a></li>
+              <li><a>Facebook</a></li>
+              <li><a>Instagram</a></li>
             </ul>
           </div>
         </div>
         <div class="">
           <div class="contact-us">
-            <button>Contact Us</button>
+            <button><a>Contact Us</a></button>
           </div>
         </div>
       </div>

@@ -25,7 +25,7 @@ def register(request):
         username = request.POST['username']
         email = request.POST['email']
         password = request.POST['password']
-        password2 = request.POST['password2']
+        password2 = request.POST['password']
 
         if password == password2:
             if User.objects.filter(email=email).exists():
@@ -37,6 +37,7 @@ def register(request):
             else:
                 user = User.objects.create_user(username=username, email=email, password=password)
                 user.save()
+                messages.info(request, "Account created")
                 return redirect('/login')
 
         else:
@@ -45,13 +46,13 @@ def register(request):
         return redirect('login')
     else:
 
-        return render(request, 'register.html')
+        return render(request, 'signup.html')
 
 def login(request):
     if request.method == 'POST':
-        username = request.POST['username']
+        email = request.POST['email']
         password = request.POST['password']
-        user = auth.authenticate(username=username, password=password)
+        user = auth.authenticate(email=email, password=password)
         if user is not None:
             auth.login(request, user)
             return redirect('/')
