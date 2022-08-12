@@ -34,7 +34,7 @@
         </div>
         <div class="reg-form">
           <h2>Login your account</h2>
-          <form method="POST" action="login">
+          <form method="POST" action="">
             {% csrf_token %}
             <div class="sec">
               <label for="email">Email Address</label><br />
@@ -80,7 +80,7 @@
             <div class="cta1">
               <p>
                 Dont have a PricingHub account?
-                <a href="{% url 'register' %}">Create account</a>
+                <a href="{% url 'signup' %}">Create account</a>
               </p>
             </div>
           </form>

@@ -135,7 +135,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-zuritrainin-projectpric-4rjfxkq29j6.ws-eu60.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-zuritrainin-projectpric-k2zxyfuo5vl.ws-eu60.gitpod.io']
 
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_PORT = 587

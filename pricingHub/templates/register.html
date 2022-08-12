@@ -32,7 +32,7 @@
       <section class="container-fluid" id="reg">
         <div class="reg-form">
           <h2>Create account</h2>
-          <form method="POST" action="">
+          <form method="POST" action="/register">
             {% csrf_token %}
             <div class="sec">
               <label for="name">Full name</label><br />
@@ -75,9 +75,9 @@
             <div class="sec">
               <label for="password">Repeat Password</label><br />
               <input
-                type="password"
+                type="password2"
                 class="size"
-                name="password"
+                name="password2"
                 placeholder="input password"
                 autocomplete="current-password"
                 id="password2"
