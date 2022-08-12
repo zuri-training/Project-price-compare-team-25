@@ -1,1 +1,1 @@
-web: gunicorn pricingHub.wsgi
+web: gunicorn pricingHub.wsgi --log-file -

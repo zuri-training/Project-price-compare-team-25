@@ -83,3 +83,5 @@ We'd like to thank The Zuri Team for creating this platform and coming up with t
 | Gbolagade Ajarat | @Gatty |
 | Victoria Preye Iyakoregha | @Vicdesigns |
 | Mogbolu John-Johanan | @jj |
+| Gafar Mercy Success | @Mercybliss |
+| Olumide Ajilore Oluwatobi | @Alaafin |
