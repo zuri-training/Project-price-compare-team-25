@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 def category(request):
     categories = Category.objects.all()
-    return render(request, 'product.html', {'categories': categories})
+    return render(request, 'category.html', {'categories': categories})
 
 
 def product(request):
