@@ -496,7 +496,10 @@ footer {
   line-height: 4em;
   font-family: "poppins";
 }
-.contact-us button {
+.connect h3,.information h3{
+  overflow: hidden;
+}
+.contact-us button a{
   margin: 2em auto;
   padding: 0.7em 5em;
   color: #fff;
@@ -792,7 +795,7 @@ footer {
   /* footer needs to be fixed for this screen size */
 }
 
-@media screen and (min-width: 900px) and (max-width: 1400px) {
+@media screen and (min-width: 900px) {
   #main-menu {
     margin-left: 5em;
   }
