@@ -57,6 +57,7 @@
   
   h1{
     /* What our users say */
+    overflow: hidden;
     text-align: center;
     margin: 10px 0;
     /* Bold Heading Styles 2 */
@@ -88,6 +89,7 @@
   }
   .user-details{
     padding: 10px 0;
+    
   }
   
   .users-rate{
@@ -100,6 +102,7 @@
   .user-details h2,
   .user-details p{
     margin: 10px 0;
+    overflow: hidden;
   }
   .users-rate>p{
     color: #AAAAAA;
@@ -135,6 +138,7 @@
   #hear-from-you{
   text-align: center;
   margin: 20px 0px;  
+  overflow: hidden;
   
   /* Bold Body Text 3 */
   font-family: 'Open Sans';
