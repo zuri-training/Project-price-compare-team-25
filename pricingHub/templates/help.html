@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../static/assets/logoo.png" type="image/x-icon">
     <meta name="description" content="Pricing Hub - Best Price Compare Platforms">
-    <title>FAQs</title>
+    <title>HELP</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
@@ -81,7 +81,7 @@
       <!-- Nav Bar end -->
     </header>
     <main>
-      <h2>FAQs</h2>
+      <h2>HELP</h2>
       <h4>What is PrincingHub?</h4>
       <p>
         Princinghub.com is a tool for online comparison shopping. we make it
@@ -136,9 +136,12 @@
               <h3>Menu</h3>
               <ul  style="list-style-type: none;">
                   <li>Services</li>
-                  <li><a href="{% url 'review'%}">Review</a></li>
-                  <li><a href="{% url 'about'%}">About</a></li>
-                  <li>Help</li>
+                  <li><a href="{% url 'review'%}" style="
+                    color: white;">Review</a></li>
+                  <li><a href="{% url 'about'%}" style="
+                    color: white;">About</a></li>
+                  <li><a href="{% url 'help'%}" style="
+                    color: white;">Help</a></li>
               </ul>
           </div>
 
@@ -154,7 +157,8 @@
       </div>
       <div class="">
           <div class="contact-us">
-              <button><a href="{% url 'contact'%}">Contact Us</button>
+              <button><a href="{% url 'contact'%}" style="
+                color: white;">Contact Us</button>
           </div>
       </div>
 
@@ -170,7 +174,7 @@
       <div>
           <a href="{% url 'privacy' %}">Privacy Policy</a>
           <a href="{% url 'terms'%}">Terms & Conditions</a>
-          <a href="{% url 'faqs'%}">FAQs</a>
+        
       </div>
   </div>
 
