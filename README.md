@@ -18,8 +18,7 @@ A webscraper for the Django Framework that compares the product prices for three
 - Konga
 - Kara
 
-<!-- <img src="Screenshots/Homepage.png" width="700"> -->
-<h6>Inserts Image of homepage</h6>
+<img src="..pricingHub/static/assets/logoo.png" width="700">
 
 # Table of Contents
 
