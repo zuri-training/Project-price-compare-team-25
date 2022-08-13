@@ -1,99 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Contact Us</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="./ext/assets/css/main.css">
-        <link rel="stylesheet" href="./ext/Font Awesome/css/font-awesome.min.css" type="text/css"/>
-        <script src="https://kit.fontawesome.com/9b613d8fc7.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <!-- The Navigation-->
-        <nav class="nav">
-            <div class="nav__logo">
-                <img src="./ext//images/logo.PNG" alt="site logo">
-            </div>
-            <div class="nav__items">
-                <ul>
-                    <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li>
-                        <a href="">Categories</a>
-                    </li>
-                    <li>
-                        <a href="">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- End of Navigation -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Contact Us</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../static/css/contact_us.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./ext/Font Awesome/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/9b613d8fc7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- The Navigation-->
+    <nav class="nav">
+      <div class="nav__logo">
+        <img src="../static/images/logo.PNG" alt="site logo" />
+      </div>
+      <div class="nav__items">
+        <ul>
+          <li>
+            <a href="{% url 'homepage'%}">Home</a>
+          </li>
+          <li>
+            <a href="{% url 'category'%}">Categories</a>
+          </li>
+          <li>
+            <a href="{% url 'contact'%}">Contact Us</a>
+          </li>
+          <li>
+            <a href="{% url 'login'%}">LogIn</a>
+          </li>
+          <li>
+            <a href="{% url 'signup'%}">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of Navigation -->
 
-        <!-- The Main -->
-        <main class="main">
-            <!-- The Form -->
-            <div class="main__form">
-                <div class="main__form-top">
-                    <h2>Contact Us</h2>
-                    <section></section>
-                    <p>Reach out to us for any enquiry</p>
-                    <form action="./ext/error.html" method="get" id="" required>
-                        <input type="text" name="" id="" placeholder="Full Name">
-                        <input type="email" name="" id="" placeholder="Your Email">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                        <input type="submit" name="" id="" value="Send message">
-                    </form>
-                </div>
-                <div class="main__form-bottom">
-                    <section class="main__form-section">
-                        <i class="fa-solid fa-location-dot"></i> 
-                           <section class="main__form-section1">
-                            Location:
-                            <small>Marako Street, No, 14, 2nd Floor</small>
-                           </section>
-                    </section>
-                    <section class="main__form-section">
-                        <i class="fa-solid fa-envelope"></i> 
-                           <section class="main__form-section1">
-                            Email:
-                            <small>Pricinghub1234@gmail.com</small>
-                           </section>
-                    </section>
-                    <section class="main__form-section">
-                        <i class="fa-solid fa-phone"></i>
-                           <section class="main__form-section1">
-                            Phone:
-                            <small>234 355 356 467</small>
-                           </section>
-                    </section>
-                </div>
-            </div>
-            <!-- End of The Form -->
+    <!-- The Main -->
+    <main class="main">
+      <!-- The Form -->
+      <div class="main__form">
+        <div class="main__form-top">
+          <h2>Contact Us</h2>
+          <section></section>
+          <p>Reach out to us for any enquiry</p>
+          <form action="error.html" method="Post" id="" required>
+            <input type="text" name="" id="" placeholder="Full Name" />
+            <input type="email" name="" id="" placeholder="Your Email" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+            ></textarea>
+            <input type="submit" name="" id="" value="Send message" />
+          </form>
+        </div>
+        <div class="main__form-bottom">
+          <section class="main__form-section">
+            <i class="fa-solid fa-location-dot"></i>
+            <section class="main__form-section1">
+              Location:
+              <small>Marako Street, No, 14, 2nd Floor</small>
+            </section>
+          </section>
+          <section class="main__form-section">
+            <i class="fa-solid fa-envelope"></i>
+            <section class="main__form-section1">
+              Email:
+              <small
+                ><a href="mailto:Pricinghub1234@gmail.com"
+                  >Pricinghub1234@gmail.com</a
+                ></small
+              >
+            </section>
+          </section>
+          <section class="main__form-section">
+            <i class="fa-solid fa-phone"></i>
+            <section class="main__form-section1">
+              Phone:
+              <small>+234 355 356 467</small>
+            </section>
+          </section>
+        </div>
+      </div>
+      <!-- End of The Form -->
 
-            <!-- The Image Div -->
-            <div class="main__image">
-                <img src="ext/images/1.png" alt="Girl on Comms" srcset="">
-            </div>
-            <!-- End of Image div -->
-        </main>
-        <!-- End of The Main -->
+      <!-- The Image Div -->
+      <div class="main__image">
+        <img
+          src="../static/images/contact_us.png"
+          alt="Girl on Comms"
+          srcset=""
+        />
+      </div>
+      <!-- End of Image div -->
+    </main>
+    <!-- End of The Main -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <script src="" async defer></script>
-    </body>
+    <script src="" async defer></script>
+  </body>
 </html>

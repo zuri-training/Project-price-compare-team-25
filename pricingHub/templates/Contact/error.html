@@ -1,84 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Error Page</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="./assets/css/main1.css">
-        <link rel="stylesheet" href="./ext/Font Awesome/css/font-awesome.min.css" type="text/css"/>
-        <script src="https://kit.fontawesome.com/9b613d8fc7.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <!-- The Navigation-->
-        <nav class="nav">
-            <div class="nav__logo">
-                <img src="./images/logo.PNG" alt="site logo">
-            </div>
-            <div class="nav__items">
-                <ul>
-                    <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li>
-                        <a href="">Categories</a>
-                    </li>
-                    <li>
-                        <a href="">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- End of Navigation -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Error Page</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../static/css/error.css" />
+    <link
+      rel="stylesheet"
+      href="./ext/Font Awesome/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/9b613d8fc7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- The Navigation-->
+    <nav class="nav">
+      <div class="nav__logo">
+        <img src="../static/images/logo.PNG" alt="site logo" />
+      </div>
+      <div class="nav__items">
+        <ul>
+          <li>
+            <a href="{% url 'homepage'%}">Home</a>
+          </li>
+          <li>
+            <a href="{% url 'category'%}">Categories</a>
+          </li>
+          <li>
+            <a href="{% url 'contact'%}">Contact Us</a>
+          </li>
+          <li>
+            <a href="{% url 'login'%}">LogIn</a>
+          </li>
+          <li>
+            <a href="{% url 'signup'%}">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of Navigation -->
 
-        <!-- The Main -->
+    <!-- The Main -->
 
-        <main class="main">
+    <main class="main">
+      <div class="main__search">
+        <div class="main__search-container">
+          <form action="">
+            <input type="text" placeholder="Hi, what are you looking for ?" />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
 
-            <div class="main__search">
-                <div class="main__search-container">
-                    <form action="">
-                        <input type="text" placeholder="Hi, what are you looking for ?">
-                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                </div>
-            </div>
+      <div class="main__contents">
+        <div class="main__content-text">
+          <h1>Oops!</h1>
+          <p>
+            We cant seem to find what you're looking for, please check the
+            spelling for correction. Thank you.
+          </p>
+          <section><a href="{% url 'homepage'%}">Back to home page</a></section>
+        </div>
 
-            <div class="main__contents">
-                <div class="main__content-text">
-                    <h1>
-                        Oops!
-                    </h1>
-                    <p>
-                        We cant seem to find what you're looking for, please check the spelling for correction. Thank you.
-                    </p>
-                    <section><a href="#">Back to home page</a></section>
-                </div>
+        <div class="main__content-image">
+          <img src="../static/images/amico.png" alt="tools image" />
+        </div>
+      </div>
+    </main>
+    <!-- End of The Main -->
 
-                <div class="main__content-image">
-                    <img src="./images/amico.png" alt="tools image">
-                </div>
-            </div>
-
-
-
-        </main>
-        <!-- End of The Main -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <script src="" async defer></script>
-    </body>
+    <script src="" async defer></script>
+  </body>
 </html>
