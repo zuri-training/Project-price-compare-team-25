@@ -9,6 +9,9 @@ contribution by slack_user: @jj
 contributions:
 
 Task 1: Creation of the database schema
+I researched on database schema.
+I contributed to the creation of the database schema.
+I contributed to the creation of the sql schema.
 
 ( https://github.com/zuri-training/Project-price-compare-team-25/issues/16 )
 
@@ -17,6 +20,11 @@ Task 1: Creation of the database schema
 
 Task 2: backend comment section creation/ linking to frontend
 
+I Created the "comment table" 
+I Linked the comment table to the views and
+I Linked the views to the Frontend.
+I Coded the urls and ensured linking was bug free.
+I assisted in the creation of the views
 
 (https://github.com/zuri-training/Project-price-compare-team-25/issues/27?notification_referrer_id=NT_kwDOBkk037Q0MTIwNDYzOTI5OjEwNTQ2MDk1OQ#event-7155356678) 
 
@@ -29,5 +37,7 @@ Task 3: i contributed to Linking backend apps to frontend
 
 
 Contribution Details:
+Linked the products app to the Frontend
+Linked the  reviews app to the front end
 
 ( https://docs.google.com/document/d/1UzpftMwuj6HETOgxtFE-ZwhoAeEF6_0oIDSG90XuxJk/edit?usp=drivesdk )

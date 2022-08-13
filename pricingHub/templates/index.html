@@ -38,7 +38,7 @@
             <ul>
               <li><a href="{% url 'homepage'%}">Home</a></li>
               <li><a href="{% url 'category'%}">Categories</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="{% url 'contact'%}">Contact Us</a></li>
               <li><a href="{% url 'login'%}">LogIn</a></li>
               <li class="signup"><a href="{% url 'signup'%}">Sign-up</a></li>
             </ul>
@@ -178,7 +178,8 @@
               <img src="../static/images/comment symbol.png" alt="" />
               <span>Comments</span>
             </div>
-            <button class="view-in-category"> <a href="{% url 'product_details'%}">Compare Product</a></button>
+            <button class="view-in-category"> <a href="{% url 'product_details'%}" style="
+              color: #c96e2c;">Compare Product</a></button>
           </div>
 
           <div class="new-products">
@@ -213,7 +214,8 @@
               <span>Comments</span>
             </div>
             <button class="view-in-category">
-              <a href="{% url 'product_details'%}">Compare Product</a>
+              <a href="{% url 'product_details'%}" style="
+              color: #c96e2c;">Compare Product</a>
             </button>
           </div>
 
@@ -249,7 +251,8 @@
               <span>Comments</span>
             </div>
             <button class="view-in-category">
-              <a href="{% url 'product_details'%}">Compare Product</a>
+              <a href="{% url 'product_details'%}" style="
+              color: #c96e2c;">Compare Product</a>
             </button>
           </div>
 
@@ -314,7 +317,8 @@
               <img src="../static/images/comment symbol.png" alt="" />
               <span>Comments</span>
             </div>
-            <button class="view-in-category">View in Category</button>
+            <button class="view-in-category"><a href="{% url 'product_details'%}" style="
+              color: #c96e2c;">Compare Product</a></button>
           </div>
 
           <div class="new-products">
@@ -345,7 +349,8 @@
               <img src="../static/images/comment symbol.png" alt="" />
               <span>Comments</span>
             </div>
-            <button class="view-in-category">View in Category</button>
+            <button class="view-in-category"><a href="{% url 'product_details'%}" style="
+              color: #c96e2c;">Compare Product</a></button>
           </div>
 
           <div class="new-products">
@@ -376,7 +381,8 @@
               <img src="../static/images/comment symbol.png" alt="" />
               <span>Comments</span>
             </div>
-            <button class="view-in-category">View in Category</button>
+            <button class="view-in-category"><a href="{% url 'product_details'%}" style="
+              color: #c96e2c;">Compare Product</a></button>
           </div>
 
           <!-- <div class="showmore">
@@ -508,7 +514,12 @@
             <h3>Menu</h3>
             <ul>
               <li><a>Services</a></li>
-              <li><a href="{% url 'about'%}">About</a></li>
+              <li><a href="{% url 'review'%}" style="
+                color: white;">Reviews</a></li>
+            
+
+              <li><a href="{% url 'about'%}" style="
+                color: white;">About</a></li>
               <li><a>Support</a></li>
             </ul>
           </div>
