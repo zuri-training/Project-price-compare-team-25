@@ -40,7 +40,7 @@ If you do not have Django you can download it [here](https://docs.djangoproject.
 
 # How To Run Program
 - First open your cmd or git bash and navigate to the `pricingHub` directory or use <br>
-```$cd pricingHub```
+```cd pricingHub```
 - Then install all requirements with pip or run the following command <br>
 ```pip install -r requirements.txt```
 - Run the code <br>
