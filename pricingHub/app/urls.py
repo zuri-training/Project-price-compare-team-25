@@ -7,4 +7,5 @@ urlpatterns = [
     path('privacy', views.privacy, name= 'privacy'),
     path('contact', views.contact, name= 'contact'),
     path('error', views.error, name='error'),
+    path('help', views.help, name='help'),
 ]
