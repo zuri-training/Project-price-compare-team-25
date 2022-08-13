@@ -25,6 +25,7 @@ A webscraper for the Django Framework that compares the product prices for three
 
 - <a href="https://github.com/zuri-training/Project-price-compare-team-25#Introduction">Introduction</a>
 - <a href="https://github.com/zuri-training/Project-price-compare-team-25#Installation">Installation</a>
+- <a href="https://github.com/zuri-training/Project-price-compare-team-25#How-To-Run-Program">How To Run Program</a>
 - <a href="https://github.com/zuri-training/Project-price-compare-team-25#About">About</a>
 - <a href="https://github.com/zuri-training/Project-price-compare-team-25#Features">Features</a>
 - <a href="https://github.com/zuri-training/Project-price-compare-team-25#Credit">Credits</a>
@@ -39,11 +40,11 @@ If you do not have Python 3.7+, you can download it [here](https://www.python.or
 If you do not have Django you can download it [here](https://docs.djangoproject.com/en/3.0/topics/install/)
 
 # How To Run Program
-- First open your cmd or git bash and navigate to the `pricingHub` directory or use
-```cd pricingHub```
-- Then install all requirements with pip or run the following command
+- First open your cmd or git bash and navigate to the `pricingHub` directory or use <br>
+```$cd pricingHub```
+- Then install all requirements with pip or run the following command <br>
 ```pip install -r requirements.txt```
-- Run the code
+- Run the code <br>
 ```python manage.py runserver```
 
 You can also find the it <a href="https://team25ph.herokuapp.com/">here</a> as deployed on heroku
