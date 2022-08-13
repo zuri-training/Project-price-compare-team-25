@@ -8,3 +8,9 @@ def terms(request):
 
 def privacy(request):
     return render(request, 'privacy policy/index.html' )
+
+def contact(request):
+    return render (request, 'contact-Us Error Page/Ass1/index.html')
+
+def faqs(request):
+    return render (request, 'help.html')

@@ -1,3 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}
+
+{% endblock %}
+{% block content %}
+
+{% endblock%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +27,7 @@
                     <li><a href="{% url 'category'%}">Categories</a></li>
                     <li><a href="#">Contact Us</a></li>
                     <li><a href="{% url 'login'%}">LogIn</a></li>
-                    <li class="signup"><a href="{% url 'register'%}">Sign-up</a></li>
+                    <li class="signup"><a href="{% url 'signup'%}">Sign-up</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,21 +42,21 @@
                         <li><a href="#">Categories</a></li>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="{% url 'login'%}">LogIn</a></li>
-                        <li class="signup"><a href="{% url 'register'%}">Sign-up</a></li>
+                        <li class="signup"><a href="{% url 'signup'%}">Sign-up</a></li>
                     </ul>
                 </nav>
             </label>
             <div class="overlay"></div>
         </div>
-
-        <h1>Terms and Conditions</h1> <br> <br>
+        <div class="termsandconditions" style="padding: 20px;">
+            <h1>Terms and Conditions</h1> <br>
 
         <p>
             Please read this Terms of Use Agreement (the "Agreement") carefully. The Agreement governs your use of the PricingHub Website 
             and the services and goods provided through or in connection with the Website (collectively, the "Service"). Each time you use 
             the Service, you acknowledge that you have read and agree to be bound by the Agreement. If you do not agree to bound by the Agreement,
             you may not use the Service.
-        </p> <br> <br>
+        </p> <br>
 
         <h2>
             IMPORTANT. The Website acts as an online marketplace for you to compare different prices of
@@ -82,6 +89,8 @@
             this website and its associated sites.
         </h3>
 
+        </div>
+        
 
     <footer>
         <div class="top-footer">
@@ -129,6 +138,7 @@
             <div>
                 <a href="{% url 'privacy' %}">Privacy Policy</a>
                 <a href="{% url 'terms'%}">Terms & Conditions</a>
+                <a href="{% url 'faqs'%}">FAQs</a>
             </div>
         </div>
     

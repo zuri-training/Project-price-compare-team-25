@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../static/assets/logoo.png" type="image/x-icon">
+    <meta name="description" content="Pricing Hub - Best Price Compare Platforms">
     <title>Category page</title>
 
     <!-- Bootstrap css -->
@@ -52,7 +54,7 @@
                 >
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link text-white" href="#">Contact Us</a>
+                <a class="nav-link text-white" href="{% url 'contact'%}">Contact Us</a>
               </li>
               <li class="nav-item px-3">
                 <a class="nav-link text-white" href="{% url 'login'%}">Login</a>
@@ -61,7 +63,7 @@
                 <a
                   class="btn btn-sm nav-link"
                   style="background: #c96e2c; color: white; width: 100px"
-                  href="{% url 'register'%}"
+                  href="{% url 'signup'%}"
                   >Sign-up</a
                 >
               </li>

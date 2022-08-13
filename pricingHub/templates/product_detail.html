@@ -1,3 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}
+
+{% endblock %}
+{% block content %}
+
+{% endblock%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -172,7 +179,7 @@
         </div>
         <div class="">
             <div class="contact-us">
-                <button>Contact Us</button>
+                <button href="{% url 'contact'%}">Contact Us</button>
             </div>
         </div>
 
@@ -186,8 +193,9 @@
         </div>
 
         <div>
-            <a href="">Privacy Policy</a>
-            <a href="">Terms & Conditions</a>
+            <a href="{% url 'privacy' %}">Privacy Policy</a>
+            <a href="{% url 'terms'%}">Terms & Conditions</a>
+            <a href="{% url 'faqs'%}">FAQs</a>
         </div>
     </div>
 

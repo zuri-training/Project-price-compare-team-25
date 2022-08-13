@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HELP</title>
+    <link rel="shortcut icon" href="../static/assets/logoo.png" type="image/x-icon">
+    <meta name="description" content="Pricing Hub - Best Price Compare Platforms">
+    <title>FAQs</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
     <link href="../static/css/stylehelp.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -23,11 +22,11 @@
         <a class="logo" href=""> <img src="../static/assets/@Pricehub-05 1 (1).png" alt="logo"></a>
         <nav id="main-menu">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">LogIn</a></li>
-                <li class="signup"><a href="#">Sign-up</a></li>
+                <li><a href="{% url 'homepage'%}">Home</a></li>
+                <li><a href="{% url 'category'%}">Categories</a></li>
+                <li><a href="{% url 'contact'%}">Contact Us</a></li>
+                <li><a href="{% url 'login'%}">LogIn</a></li>
+                <li class="signup"><a href="{% url 'signup'%}">Sign-up</a></li>
             </ul>
         </nav>
     </div>
@@ -38,28 +37,20 @@
             <nav id="sidebar-menu">
                 <h3>Menu</h3>
                 <ul>
-                    <li ><a href="#"><small>Home</small></a></li>
-                    <li  ><a href="#"><small>Categories</small></a></li>
-                    <li  ><a href="#"><small>Contact Us</small></a></li>
-                    <li  ><a href="#"><small> LogIn</small></a></li>
-                    <li class="signup"><a href="#"><small>Sign-up</small></a></li>
+                    <li ><a href="{% url 'homepage'%}"><small>Home</small></a></li>
+                    <li  ><a href="category"><small>Categories</small></a></li>
+                    <li  ><a href="{% url 'contact'%}"><small>Contact Us</small></a></li>
+                    <li  ><a href="{% url 'login'%}"><small> LogIn</small></a></li>
+                    <li class="signup"><a href="{% url 'signup'%}"><small>Sign-up</small></a></li>
                 </ul>
             </nav>
         </label>
         <div class="overlay"></div>
     </div>
 
-
-
-
-
-
-
-
-
     </header>
     <main>
-      <h2>HELP</h2>
+      <h2>FAQs</h2>
       <h4>What is PrincingHub?</h4>
       <p>
         Princinghub.com is a tool for online comparison shopping. we make it
@@ -132,7 +123,7 @@
       </div>
       <div class="">
           <div class="contact-us">
-              <button>Contact Us</button>
+              <button> <a href="{% url 'contact'%}">Contact Us</a></button>
           </div>
       </div>
 
@@ -146,8 +137,9 @@
       </div>
 
       <div>
-          <a href="">Privacy Policy</a>
-          <a href="">Terms & Conditions</a>
+          <a href="{% url 'privacy' %}">Privacy Policy</a>
+          <a href="{% url 'terms'%}">Terms & Conditions</a>
+          <a href="{% url 'faqs'%}">FAQs</a>
       </div>
   </div>
 
