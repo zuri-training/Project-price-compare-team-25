@@ -26,16 +26,16 @@ class Product(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     name = models.CharField(max_length=100, db_index=True)
     slug = models.SlugField(max_length=50, db_index=True)
-    product_detail = models.CharField(max_length=200, default='detail')
+    product_detail = models.TextField(max_length=200, default='detail')
 
     url_jumia = models.CharField(max_length=250, db_index=True)
     url_konga = models.CharField(max_length=250, db_index=True)
     url_kara = models.CharField(max_length=250, db_index=True)
 
     #price_kara = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True)
-    price_kara = models.TextField(max_length=15, null=True, blank=True)
-    price_jumia = models.TextField(max_length=15, null=True, blank=True)
-    price_konga = models.TextField(max_length=15, null=True, blank=True)
+    price_kara = models.CharField(max_length=15, null=True, blank=True)
+    price_jumia = models.CharField(max_length=15, null=True, blank=True)
+    price_konga = models.CharField(max_length=15, null=True, blank=True)
 
     created_on = models.DateTimeField(auto_now_add=True)
     modified_on = models.DateTimeField(auto_now=True)

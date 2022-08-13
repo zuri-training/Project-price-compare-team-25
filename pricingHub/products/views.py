@@ -12,7 +12,7 @@ def product(request):
     return render(request, 'product.html', {'products': products})
 
 def product_details(request):
-    return render (request, 'product_detail_page/product_detail.html')
+    return render(request, 'product_detail_page/product_detail.html')
 
 def comment(request):
     comments = Comment.objects.all()
