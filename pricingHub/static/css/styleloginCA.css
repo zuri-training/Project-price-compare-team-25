@@ -119,10 +119,9 @@ label
     border-radius: 7px;
     border: 0px;
 }
-
 .cta p{
     padding-top: 20px;
-    margin-left: 70px;
+    /* margin-left: 70px; */
 }
 .cta1 p{
     padding-top: 20px;
@@ -131,7 +130,6 @@ label
 .cta2 p{
     margin: 5px;
     margin-bottom: 30px;
-    margin-left: 220px;
     color:#002366;
 }
 
@@ -237,8 +235,7 @@ label
         }
         .cta2 p{
             margin: 5px;
-            margin-bottom: 30px;
-            margin-left: 150px;
+            margin-bottom: 10px;
             color:RGB(43, 72, 128)
         }
         .cta1 p{
@@ -257,6 +254,9 @@ label
         }
         input{
             font-size: 13px;
+        }
+        .fa-eye{
+            display: none;
         }
         }
     

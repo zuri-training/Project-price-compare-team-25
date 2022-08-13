@@ -1,3 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}
+
+{% endblock %}
+{% block content %}
+
+{% endblock%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +27,7 @@
                     <li><a href="{% url 'category'%}">Categories</a></li>
                     <li><a href="#">Contact Us</a></li>
                     <li><a href="{% url 'login'%}">LogIn</a></li>
-                    <li class="signup"><a href="{% url 'register'%}">Sign-up</a></li>
+                    <li class="signup"><a href="{% url 'signup'%}">Sign-up</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,53 +42,55 @@
                         <li><a href="#">Categories</a></li>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="{% url 'login'%}">LogIn</a></li>
-                        <li class="signup"><a href="{% url 'register'%}">Sign-up</a></li>
+                        <li class="signup"><a href="{% url 'signup'%}">Sign-up</a></li>
                     </ul>
                 </nav>
             </label>
             <div class="overlay"></div>
         </div>
+        <div class="termsandconditions" style="padding: 20px;">
+            <h1>Terms and Conditions</h1> <br>
 
-        <h1>Terms and Conditions</h1> <br> <br>
+            <p>
+                Please read this Terms of Use Agreement (the "Agreement") carefully. The Agreement governs your use of the PricingHub Website 
+                and the services and goods provided through or in connection with the Website (collectively, the "Service"). Each time you use 
+                the Service, you acknowledge that you have read and agree to be bound by the Agreement. If you do not agree to bound by the Agreement,
+                you may not use the Service.
+            </p> <br>
 
-        <p>
-            Please read this Terms of Use Agreement (the "Agreement") carefully. The Agreement governs your use of the PricingHub Website 
-            and the services and goods provided through or in connection with the Website (collectively, the "Service"). Each time you use 
-            the Service, you acknowledge that you have read and agree to be bound by the Agreement. If you do not agree to bound by the Agreement,
-            you may not use the Service.
-        </p> <br> <br>
+            <h2>
+                IMPORTANT. The Website acts as an online marketplace for you to compare different prices of
+                gadgets. Any information you provide to source sites in connection with your purchase remains with
+                the chosen source market/size.
+            </h2> <br>
 
-        <h2>
-            IMPORTANT. The Website acts as an online marketplace for you to compare different prices of
-            gadgets. Any information you provide to source sites in connection with your purchase remains with
-            the chosen source market/size.
-        </h2> <br>
+            <ol type="1">
+                <li>PricingHub is not responsible or liable for any products, services, information or other materials
+                    dispayed, purchased, or obtained by you from the Website, including without limitations & 
+                    recommendations.
+                </li>
 
-        <ol type="1">
-            <li>PricingHub is not responsible or liable for any products, services, information or other materials
-                dispayed, purchased, or obtained by you from the Website, including without limitations & 
-                recommendations.
-            </li>
+                <li>PricingHub does not endorse, warrant or guarantee the products or services of any seller, including
+                    without limitations, any rates or prices.
+                </li>
 
-            <li>PricingHub does not endorse, warrant or guarantee the products or services of any seller, including
-                without limitations, any rates or prices.
-            </li>
+                <li>PricingHub is not liable for any delays, inaccuracies, errors or omissions with respect to the information
+                    or the transmission or delivery of all or any part thereof, for any damage arising therefrom or
+                    occasioned thereby, or for the results obtained from the use of the information.
+                </li>
 
-            <li>PricingHub is not liable for any delays, inaccuracies, errors or omissions with respect to the information
-                or the transmission or delivery of all or any part thereof, for any damage arising therefrom or
-                occasioned thereby, or for the results obtained from the use of the information.
-            </li>
+                <li>Any information on the Website can change without notice.</li>
+            </ol>
+            
+            <br> <br>
 
-            <li>Any information on the Website can change without notice.</li>
-        </ol>
+            <h3>DISCLAIMER: PricingHub tries to provide quality information, but PricingHub makes no claims, promises or
+                guarantees about the accuracy, completeness, or adequacy of the information conatined in or linked to
+                this website and its associated sites.
+            </h3>
+
+        </div>
         
-        <br> <br>
-
-        <h3>DISCLAIMER: PricingHub tries to provide quality information, but PricingHub makes no claims, promises or
-            guarantees about the accuracy, completeness, or adequacy of the information conatined in or linked to
-            this website and its associated sites.
-        </h3>
-
 
     <footer>
         <div class="top-footer">
@@ -129,6 +138,7 @@
             <div>
                 <a href="{% url 'privacy' %}">Privacy Policy</a>
                 <a href="{% url 'terms'%}">Terms & Conditions</a>
+                <a href="{% url 'faqs'%}">FAQs</a>
             </div>
         </div>
     
