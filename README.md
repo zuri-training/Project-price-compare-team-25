@@ -38,6 +38,16 @@ This Project (Pricing Hub) utilises the power of the webscraping library Beautif
 If you do not have Python 3.7+, you can download it [here](https://www.python.org/downloads/release/python-370/, "here").
 If you do not have Django you can download it [here](https://docs.djangoproject.com/en/3.0/topics/install/)
 
+# How To Run Program
+- First open your cmd or git bash and navigate to the `pricingHub` directory or use
+```cd pricingHub```
+- Then install all requirements with pip or run the following command
+```pip install -r requirements.txt```
+- Run the code
+```python manage.py runserver```
+
+You can also find the it <a href="https://team25ph.herokuapp.com/">here</a> as deployed on heroku
+
 # About
 
 Pricing Hub uses a webscraping script that traverses through the URLs of the Leading Nigerian Online Shops stored in the database. It then scrapes the prices from the website pages and updates the database with the latest prices. As it currently stands users can register to create an account and store items in a cart, there is not a purchase page yet.
