@@ -4,6 +4,9 @@
     box-sizing: border-box;
     /* border: 2px solid gray; */
   }
+  body{
+    font-family: "Open Sans";
+  }
   
   header{
     width: 100%;
