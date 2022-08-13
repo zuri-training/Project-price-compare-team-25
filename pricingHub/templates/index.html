@@ -21,7 +21,7 @@
             <ul>
               <li><a href="{% url 'homepage'%}">Home</a></li>
               <li><a href="{% url 'category'%}">Categories</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="{% url 'contact'%}">Contact Us</a></li>
               <li><a href="{% url 'login'%}">LogIn</a></li>
              <li class="signup"><a href="{% url 'signup'%}">Sign-up</a></li>
             </ul>
@@ -36,7 +36,7 @@
             <ul>
               <li><a href="{% url 'homepage'%}">Home</a></li>
               <li><a href="{% url 'category'%}">Categories</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="{% url 'contact'%}">Contact Us</a></li>
               <li><a href="{% url 'login'%}">LogIn</a></li>
               <li class="signup"><a href="{% url 'signup'%}">Sign-up</a></li>
             </ul>
@@ -534,7 +534,7 @@
         </div>
         <div class="">
           <div class="contact-us">
-            <button><a>Contact Us</a></button>
+            <button><a href="{% url 'contact'%}">Contact Us</a></button>
           </div>
         </div>
       </div>

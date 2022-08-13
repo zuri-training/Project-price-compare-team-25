@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Authentification page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,34 +11,108 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link href="../static/css/stylereset.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
+    <link
+      href="../static/css/stylereset.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <p class="logo"><img src="../static/assets/@Pricehub-05 1 (1).png" /></p>
-          </div>
-          <div class="navigation">
-            <p class="navig"><a href="">Home</a></p>
-            <p class="navig"><a href="">Categories</a></p>
-            <p class="navig"><a href="">Contact Us</a></p>
-          </div>
+      <div class="logo">
+        <p class="logo">
+          <img src="../static/assets/@Pricehub-05 1 (1).png" />
+        </p>
+      </div>
+      <div class="navigation">
+        <p class="navig"><a href="{% url 'homepage'%}">Home</a></p>
+        <p class="navig"><a href="{% url 'category'%}">Categories</a></p>
+        <p class="navig"><a href="{% url 'contact'%}">Contact Us</a></p>
+      </div>
     </header>
     <main class="resetform2">
-        <h2 class="headerreset2">Verify Your Account</h2>
-        <p class="instruct3">A verification code has been sent to your e-mail___Kindly input the codes below.</p>
-        <div id="form">
-        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" class="inputver" />
-        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" class="inputver"/>
-        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" class="inputver"/>
-        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" class="inputver"/>
-        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" class="inputver"/>
-        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" class="inputver"/>
-        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" class="inputver"/>
+      <h2 class="headerreset2">Verify Your Account</h2>
+      <p class="instruct3">
+        A verification code has been sent to your e-mail___Kindly input the
+        codes below.
+      </p>
+      <div id="form">
+        <input
+          type="text"
+          maxlength="1"
+          size="1"
+          min="0"
+          max="9"
+          pattern="[0-9]{1}"
+          class="inputver"
+        />
+        <input
+          type="text"
+          maxlength="1"
+          size="1"
+          min="0"
+          max="9"
+          pattern="[0-9]{1}"
+          class="inputver"
+        />
+        <input
+          type="text"
+          maxlength="1"
+          size="1"
+          min="0"
+          max="9"
+          pattern="[0-9]{1}"
+          class="inputver"
+        />
+        <input
+          type="text"
+          maxlength="1"
+          size="1"
+          min="0"
+          max="9"
+          pattern="[0-9]{1}"
+          class="inputver"
+        />
+        <input
+          type="text"
+          maxlength="1"
+          size="1"
+          min="0"
+          max="9"
+          pattern="[0-9]{1}"
+          class="inputver"
+        />
+        <input
+          type="text"
+          maxlength="1"
+          size="1"
+          min="0"
+          max="9"
+          pattern="[0-9]{1}"
+          class="inputver"
+        />
+        <input
+          type="text"
+          maxlength="1"
+          size="1"
+          min="0"
+          max="9"
+          pattern="[0-9]{1}"
+          class="inputver"
+        />
 
-        <input type="submit" name="Resetpw" value="Verify Account" id="ResetP" />
-   </div>
-    <p class="instruct4">Didn't get the verification Code? <a href="" class="vercode">Resend Verification Code</a> or <a href="" class="vercode">Change Email</a></p>
+        <input
+          type="submit"
+          name="Resetpw"
+          value="Verify Account"
+          id="ResetP"
+        />
+      </div>
+      <p class="instruct4">
+        Didn't get the verification Code?
+        <a href="" class="vercode">Resend Verification Code</a> or
+        <a href="" class="vercode">Change Email</a>
+      </p>
     </main>
-</body>
+  </body>
 </html>

@@ -19,9 +19,9 @@
                 <p class="logo"><img src="../static/assets/@Pricehub-05 1 (1).png" /></p>
               </div>
               <div class="navigation">
-                <p class="navig"><a href="">Home</a></p>
-                <p class="navig"><a href="">Categories</a></p>
-                <p class="navig"><a href="">Contact Us</a></p>
+                <p class="navig"><a href="{% url 'homepage'%}">Home</a></p>
+                <p class="navig"><a href="{% url 'category'%}">Categories</a></p>
+                <p class="navig"><a href="{% url 'contact'%}">Contact Us</a></p>
               </div>
     
     
@@ -154,9 +154,9 @@
                 <h3>Menu</h3>
                 <ul>
                     <li>Services</li>
-                    <li>Review</li>
-                    <li>About</li>
-                    <li>Support</li>
+                    <li><a href="{% url 'contact'%}">Review</a></li>
+                    <li><a href="{% url 'about'%}">About</a></li>
+                    <li><a>Help</a></li>
                 </ul>
             </div>
 
@@ -172,7 +172,7 @@
         </div>
         <div class="">
             <div class="contact-us">
-                <button>Contact Us</button>
+                <button><a href="{% url 'contact'%}">Contact Us</a></button>
             </div>
         </div>
 
@@ -186,8 +186,8 @@
         </div>
 
         <div>
-            <a href="">Privacy Policy</a>
-            <a href="">Terms & Conditions</a>
+            <a href="{% url 'privacy'%}">Privacy Policy</a>
+            <a href="{% url 'terms'%}">Terms & Conditions</a>
         </div>
     </div>
 
