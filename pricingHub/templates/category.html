@@ -195,22 +195,24 @@
 
     <!-- products -->
     <section class="container d-flex mt-5">
+
+      {% for products in products   %}
+   
       <div class="row row-cols-2 row-cols-md-3 g-5">
         <div class="col">
           <div class="card" style="width: 12rem">
             <img
-              src="../static/assets/images/Iphone 13 Pro Max 1.png"
+              src="{{ products.thumbnail }}"
               class="img-fluid img-thumbnail"
               alt="..."
               style="width: 196px; height: 200px !important"
             />
             <div class="card-body">
               <h5 class="card-title d-flex justify-content-between">
-                <img src="../static/images/jumia logo.png" /> N55,000
+                <img src="../static/images/jumia logo.png" /> 
               </h5>
               <p class="card-text">
-                Apple IPhone 13 Pro Max 6.7" (6GB RAM +128GB ROM), Sierra
-                Blue...
+                {{ products.name }}
               </p>
               <a href="" class="btn text-white" style="background: #c96e2c"
                 ><small>Compare product</small></a
@@ -218,82 +220,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card" style="width: 12rem">
-            <img
-              src="../static/assets/images/Iphone 13 Pro Max 1.png"
-              class="img-fluid img-thumbnail"
-              alt="..."
-              style="width: 196px; height: 200px !important"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a short card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 12rem">
-            <img
-              src="../static/assets/images/Iphone 13 Pro Max 1.png"
-              class="img-fluid img-thumbnail"
-              alt="..."
-              style="width: 196px; height: 200px !important"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card" style="width: 12rem">
-            <img
-              src="../static/assets/images/Iphone 13 Pro Max 1.png"
-              class="img-fluid img-thumbnail"
-              alt="..."
-              style="width: 196px; height: 200px !important"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text"></p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 12rem">
-            <img
-              src="../static/assets/images/Iphone 13 Pro Max 1.png"
-              class="img-fluid img-thumbnail"
-              alt="..."
-              style="width: 196px; height: 200px !important"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a short card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 12rem">
-            <img
-              src="../static/assets/images/Iphone 13 Pro Max 1.png"
-              class="img-fluid img-thumbnail"
-              alt="..."
-              style="width: 196px; height: 200px !important"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content.
-              </p>
-            </div>
-          </div>
+        {% endfor %}
         </div>
       </div>
     </section>
