@@ -1,5 +1,8 @@
 from . models import Comment, Product, Category
 from django.shortcuts import render
+from . forms import CreateComments
+from django.views.generic import CreateView
+from django.urls import reverse_lazy
 
 
 def category(request):
@@ -11,9 +14,20 @@ def product(request):
     products = Product.objects.all()
     return render(request, 'product.html', {'products': products})
 
+
 def product_details(request):
     return render(request, 'product_detail_page/product_detail.html')
 
+
 def comment(request):
-    comments = Comment.objects.all()
-    return render(request, 'product.html', {'comments': comments})
+    comments = Comment.objects.all
+    return render(request, 'createcomment.html', {'comments': comments})
+
+
+class AddCommentView(CreateView):
+    model = Comment
+    form_class = CreateComments
+    template_name = 'addcomment.html'
+    #fields = '__all__'
+
+    success_url = reverse_lazy('comment')
