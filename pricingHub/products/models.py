@@ -52,10 +52,10 @@ class Product(models.Model):
 
 class Comment(models.Model):
     product = models.ForeignKey(Product,  on_delete=models.CASCADE)
-    name_id = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, default=True)
-    #name = models.CharField(max_length=20)
+    #name_id = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, default=True)
+    name = models.CharField(max_length=20, default='name')
     comment_text = models.TextField(max_length=200)
     date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return '%s - %s' % (self.product.name, self.name_id)
+        return '%s - %s' % (self.product.name, self.name)
