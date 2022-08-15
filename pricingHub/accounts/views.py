@@ -57,10 +57,10 @@ def register_user(request):
     #     if password == password2:
     #         if User.objects.filter(email=email).exists():
     #             messages.info(request, 'Email taken')
-    #             return redirect('signup')
+    #             return redirect('register')
     #         elif User.objects.filter(username=username).exists():
     #             messages.info(request, 'Username is taken')
-    #             return redirect('signup')
+    #             return redirect('register')
     #         else:
     #             user = User.objects.create_user(username=username, email=email, password=password)
     #             user.save()
@@ -69,7 +69,7 @@ def register_user(request):
 
     #     else:
     #         messages.info(request, 'password does not match')
-    #         return redirect('signup')
+    #         return redirect('register')
     #     return redirect('login')
     # else:
 
