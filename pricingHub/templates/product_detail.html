@@ -30,7 +30,7 @@
   <section class="container-fluid d-flex flex-wrap mt-5">
     <div class="col-lg-5 col-md-10 col-sm-12 col-12 justify-content-center">
       <div class="col-12 d-flex justify-content-center">
-        <img src="../static/images/image 12.png" class="img-fluid" style="width:237px ; height: 344px">
+        <img src="{{products.thumbnail}}">
       </div>
       <div class="d-flex justify-content-center row g-2 col-lg-12">
         <img src="../static/images/image 12.png" class="img-fluid" style="width:70px ; height: 80px">
@@ -44,7 +44,8 @@
       <p class=""><span>Gold</span> <span>Pink</span> <span>Blue</span> <span>Black</span> <a href="a">Click to view
           full image</a></p>
       <p>
-        <ul>
+        {{products.product_detail}}
+        {% comment %} <ul>
 
           <li>Super Retina XDR OLED, HDR10, Dolby Vision, 800 nits (HBM), 1200 nits (peak)</li>
           <li>160.8 x 78.1 x 7.4 mm (6.33 x 3.07 x 0.29 in)</li>
@@ -56,7 +57,7 @@
           <li>Face ID, accelerometer, gyro, proximity, compass, barometer.</li>
           <li>Water resistant to a depth of 6 meters for up to 30 minutes. Compatible with MagSafe accessories and
             wireless chargers</li>
-        </ul>
+        </ul> {% endcomment %}
       </p>
     </div>
   </section>

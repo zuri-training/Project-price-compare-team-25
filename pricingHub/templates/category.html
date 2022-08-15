@@ -173,9 +173,9 @@
     <!-- products -->
     <section class="container d-flex mt-5">
 
-      {% for products in products   %}
    
       <div class="row row-cols-2 row-cols-md-3 g-5">
+        {% for products in products   %}
         <div class="col">
           <div class="card" style="width: 12rem">
             <img
@@ -191,9 +191,15 @@
               <p class="card-text">
                 {{ products.name }}
               </p>
+                
+              {% if user.is_authenticated %}              
               <a href="{% url 'product_details' products.id %}" class="btn text-white" style="background: #c96e2c"
                 ><small>Compare product</small></a
               >
+              {% else %}
+              <a href="{% url 'login'%}" class="btn text-white" style="
+                color: #c96e2c;">Login to Compare</a>
+              {% endif %}
             </div>
           </div>
         </div>

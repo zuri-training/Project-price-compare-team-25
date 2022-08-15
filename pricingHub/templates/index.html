@@ -66,8 +66,11 @@
                 Get The Best Deals on <br />
                 Luxury iPhone Series
               </h1>
-
+              
+              {% if user.is_authenticated %}              
+              {% else %}
               <div class="signup1"><a href="{% url 'register'%}">Create Free Account</a></div>
+              {% endif %}
 
               <br />
               <!-- <div class="dots" style="text-align: left">
@@ -87,7 +90,10 @@
                 Gadget Lifetyle?
               </h1>
 
+              {% if user.is_authenticated %}              
+              {% else %}
               <div class="signup1"><a href="{% url 'register'%}">Create Free Account</a></div>
+              {% endif %}
 
               <br />
               <!-- <div class="dots" style="text-align: left">
@@ -107,7 +113,10 @@
                 Be Your Own Influencer<br />Take The Best Pictures On The Go
               </h1>
 
+              {% if user.is_authenticated %}              
+              {% else %}
               <div class="signup1"><a href="{% url 'register'%}">Create Free Account</a></div>
+              {% endif %}
               <br />
               <!-- <div class="dots" style="text-align: left">
                 <span class="dot" onclick="currentSlide(1)"></span>

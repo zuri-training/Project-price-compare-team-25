@@ -58,4 +58,4 @@ class Comment(models.Model):
     date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return '%s - %s' % (self.product.name, self.name_id)
+        return '%s - %s' % (self.product.name, self.name)
