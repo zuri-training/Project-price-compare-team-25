@@ -106,13 +106,18 @@
   </section>
   <section class="d-flex flex-wrap container-fluid mt-5 justify-content-around" >
 
-    <div class="col-sm-10 col-12 col-md-10 col-lg-7 mb-5">
-      <div class="mb-3 col-10">
-        <label for="commentBox" class="form-label"><b>Leave a Comment</b></label>
-        <textarea class="form-control" id="commentBox" rows="5"></textarea>
-      </div>
-      <button class="btn text-white  " style="background:#C96E2C;">Comment</button>
-    </div>
+<h2>Add comment</h2>
+<br/><br/>
+
+
+    <div class = 'form-group'>
+<form method = 'POST'>
+            {% csrf_token %}
+            {{ form.as_p}}
+            <button class="btn btn-secondary">Add Comment</button>
+</div>
+
+<br/><br/>
 
     <div class="col-lg-4 align-item-center">
       <div class="card  col-12 mb-3">

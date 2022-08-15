@@ -32,7 +32,7 @@ def comment(request):
 class AddCommentView(CreateView):
     model = Comment
     form_class = CreateComments
-    template_name = 'addcomment.html'
+    template_name = 'product_detail.html'
     #fields = '__all__'
 
     success_url = reverse_lazy('comment')
