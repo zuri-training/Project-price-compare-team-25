@@ -12,7 +12,7 @@ def category(request):
 
 def product(request):
     products = Product.objects.all()
-    return render(request, 'index.html', {'products': products})
+    return render(request, 'product_detail.html', {'products': products})
 
 
 def category(request):

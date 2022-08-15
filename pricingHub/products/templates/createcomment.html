@@ -2,14 +2,18 @@
 
 
 {% if not comments.all %}
-    No comments..<a href="{% url 'add_comment'%}"> Return <a>Add One</a>
+    No comments..<a href="{% url 'add_comment '%}"> RETURN
+    <a>Add One</a>
 {% else %}
-<a href="{% url 'add_comment'%}">Add Comment</a>
+<a href="{% url 'add_comment'%}"> <br/>
+    RETURN
+<br/></a>
     {% for items in comments %}
         'verfied user'
-        <strong> {{items.name}} - {{items.date}}</strong>
+         {{    items.name}} -- {{   items.date}}
         <br/>
-        {{items.comment_text}}
+        <strong>{{items.comment_text}}</strong>
+    <br/><br/>
     {% endfor %}
 {% endif %}
 <br/>
