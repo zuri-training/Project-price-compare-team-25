@@ -39,7 +39,7 @@
       </div>
     </div>
     <div class="col-lg-7 col-md-10 col-sm-12 col-12 mt-5">
-      <h4>Apple iPhone 12 Pro 64GB, Graphite </h4>
+      <h4>{{products.name}} </h4>
       <p><span>Brand:</span> Apple </p>
       <p class=""><span>Gold</span> <span>Pink</span> <span>Blue</span> <span>Black</span> <a href="a">Click to view
           full image</a></p>
@@ -73,9 +73,9 @@
           
           <div class="card-body">
             <img src="../static/images/konga.png" class="card-img-top  card-img-center text-center mb-3" alt="KONGA" style="width:100px; height: 35px">
-            <h4 class="card-title mb-5">Price: N55,000</h4>
+            <h4 class="card-title mb-5">{{products.price_konga}}</h4>
             
-            <a href="#" class="btn btn-outline-warning">View in store</a>
+            <a href="{{ products.url_konga }}" class="btn btn-outline-warning">View in store</a>
           </div>
         </div>
       </div>
@@ -84,9 +84,9 @@
           
           <div class="card-body">
             <img src="../static/images/jumia logo.png" class="card-img-top  card-img-center text-center mb-3" alt="JUMIA" style="width:110px; height: 35px">
-            <h4 class="card-title mb-5"><b>Price: N55,000</b></h4>
+            <h4 class="card-title mb-5"><b>{{products.price_jumia}}</b></h4>
             
-            <a href="#" class="btn btn-outline-warning">View in store</a>
+            <a href="{{ products.url_jumia }}" class="btn btn-outline-warning">View in store</a>
           </div>
         </div>
       </div>
@@ -95,9 +95,9 @@
           
           <div class="card-body">
             <img src="../static/images/kara.png" class="card-img-top  card-img-center text-center mb-3" alt="KARA" style="width:100px; height: 35px">
-            <h4 class="card-title mb-5">Price: N55,000</h4>
+            <h4 class="card-title mb-5">{{products.price_kara}}</h4>
             
-            <a href="#" class="btn btn-outline-warning">View in store</a>
+            <a href= "{{ products.url_kara }}" class="btn btn-outline-warning">View in store</a>
           </div>
         </div>
       </div>
@@ -106,13 +106,18 @@
   </section>
   <section class="d-flex flex-wrap container-fluid mt-5 justify-content-around" >
 
-    <div class="col-sm-10 col-12 col-md-10 col-lg-7 mb-5">
-      <div class="mb-3 col-10">
-        <label for="commentBox" class="form-label"><b>Leave a Comment</b></label>
-        <textarea class="form-control" id="commentBox" rows="5"></textarea>
-      </div>
-      <button class="btn text-white  " style="background:#C96E2C;">Comment</button>
-    </div>
+<h2>Add comment</h2>
+<br/><br/>
+
+
+    <div class = 'form-group'>
+<form method = 'POST'>
+            {% csrf_token %}
+            {{ form.as_p}}
+            <button class="btn btn-secondary">Add Comment</button>
+</div>
+
+<br/><br/>
 
     <div class="col-lg-4 align-item-center">
       <div class="card  col-12 mb-3">

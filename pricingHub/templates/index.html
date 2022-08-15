@@ -188,8 +188,14 @@
               <img src="../static/images/comment symbol.png" alt="" />
               <span>Comments</span>
             </div>
-            <button class="view-in-category"> <a href="{% url 'product_details'%}" style="
+            
+            {% if user.is_authenticated %}              
+            <button class="view-in-category"> <a href="" style="
               color: #c96e2c;">Compare Product</a></button>
+            {% else %}
+            <button class="view-in-category"> <a href="{% url 'login'%}" style="
+              color: #c96e2c;">Login to Compare</a></button>
+            {% endif %}
           </div>
 
           <div class="new-products">
@@ -223,10 +229,13 @@
               <img src="../static/images/comment symbol.png" alt="" />
               <span>Comments</span>
             </div>
-            <button class="view-in-category">
-              <a href="{% url 'product_details'%}" style="
-              color: #c96e2c;">Compare Product</a>
-            </button>
+            {% if user.is_authenticated %}              
+            <button class="view-in-category"> <a href="" style="
+              color: #c96e2c;">Compare Product</a></button>
+            {% else %}
+            <button class="view-in-category"> <a href="{% url 'login'%}" style="
+              color: #c96e2c;">Login to Compare</a></button>
+            {% endif %}
           </div>
 
           <div class="new-products">
@@ -260,10 +269,13 @@
               <img src="../static/images/comment symbol.png" alt="" />
               <span>Comments</span>
             </div>
-            <button class="view-in-category">
-              <a href="{% url 'product_details'%}" style="
-              color: #c96e2c;">Compare Product</a>
-            </button>
+            {% if user.is_authenticated %}              
+            <button class="view-in-category"> <a href="" style="
+              color: #c96e2c;">Compare Product</a></button>
+            {% else %}
+            <button class="view-in-category"> <a href="{% url 'login'%}" style="
+              color: #c96e2c;">Login to Compare</a></button>
+            {% endif %}
           </div>
 
           <!-- 
@@ -327,8 +339,13 @@
               <img src="../static/images/comment symbol.png" alt="" />
               <span>Comments</span>
             </div>
-            <button class="view-in-category"><a href="{% url 'product_details'%}" style="
+            {% if user.is_authenticated %}              
+            <button class="view-in-category"> <a href="" style="
               color: #c96e2c;">Compare Product</a></button>
+            {% else %}
+            <button class="view-in-category"> <a href="{% url 'login'%}" style="
+              color: #c96e2c;">Login to Compare</a></button>
+            {% endif %}
           </div>
 
           <div class="new-products">
@@ -359,8 +376,13 @@
               <img src="../static/images/comment symbol.png" alt="" />
               <span>Comments</span>
             </div>
-            <button class="view-in-category"><a href="{% url 'product_details'%}" style="
+            {% if user.is_authenticated %}              
+            <button class="view-in-category"> <a href="" style="
               color: #c96e2c;">Compare Product</a></button>
+            {% else %}
+            <button class="view-in-category"> <a href="{% url 'login'%}" style="
+              color: #c96e2c;">Login to Compare</a></button>
+            {% endif %}
           </div>
 
           <div class="new-products">
@@ -391,8 +413,13 @@
               <img src="../static/images/comment symbol.png" alt="" />
               <span>Comments</span>
             </div>
-            <button class="view-in-category"><a href="{% url 'product_details'%}" style="
+            {% if user.is_authenticated %}              
+            <button class="view-in-category"> <a href="" style="
               color: #c96e2c;">Compare Product</a></button>
+            {% else %}
+            <button class="view-in-category"> <a href="{% url 'login'%}" style="
+              color: #c96e2c;">Login to Compare</a></button>
+            {% endif %}
           </div>
 
           <!-- <div class="showmore">
