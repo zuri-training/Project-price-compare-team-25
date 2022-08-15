@@ -1,0 +1,15 @@
+<h1>comment</h1>
+
+
+{% if not comments.all %}
+    No comments..<a href="{% url 'add_comment'%}">Add Comment<a>Add One</a>
+{% else %}
+<a href="{% url 'add_comment'%}">Add Comment</a>
+    {% for items in comments %}
+        <strong> {{items.name_id}} - {{items.date}}</strong>
+        <br/>
+        {{items.comment_text}}
+    {% endfor %}
+{% endif %}
+<br/>
+    </a>
