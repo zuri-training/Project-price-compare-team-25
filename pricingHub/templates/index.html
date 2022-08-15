@@ -133,8 +133,8 @@
       </section>
     </header>
 
-    <div class="search">
-      <form action="{% url 'search-venues' %}" method="post">
+    <div>
+      <form  class="search" action="{% url 'search-venues' %}" method="post">
         {% csrf_token %}
         <input type="search" placeholder="Hi, what are you looking for?" name="searched" />
         <button type="submit" style="border-radius: 5px; background:#2b4880; color: white; padding:1em; border: none; cursor: pointer;">Search</button>  
@@ -573,10 +573,10 @@
           <div class="connect">
             <h3>Connect</h3>
             <ul>
-              <li><a>LinkedIn</a></li>
-              <li><a>Twitter</a></li>
-              <li><a>Facebook</a></li>
-              <li><a>Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/pricinghub-team-144782248">LinkedIn</a></li>
+              <li><a href="https://mobile.twitter.com/team2560834659">Twitter</a></li>
+              <li><a href="www.facebook,com">Facebook</a></li>
+              <li><a href="https://www.instagram.com/pricing_hub/">Instagram</a></li>
             </ul>
           </div>
         </div>
