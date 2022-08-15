@@ -63,6 +63,11 @@
               <li class="nav-item px-3">
                 <a class="nav-link text-white" href="{% url 'contact'%}">Contact Us</a>
               </li>
+              {% if user.is_authenticated %}              
+              <li class="nav-item px-3">
+                <a class="nav-link text-white" href="{% url 'logout'%}">Logout</a>
+              </li>
+              {% else %}
               <li class="nav-item px-3">
                 <a class="nav-link text-white" href="{% url 'login'%}">Login</a>
               </li>
@@ -74,6 +79,7 @@
                   >Sign-up</a
                 >
               </li>
+              {% endif %}
             </ul>
           </div>
         </div>
