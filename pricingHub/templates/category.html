@@ -65,7 +65,7 @@
                 <a
                   class="btn btn-sm nav-link"
                   style="background: #c96e2c; color: white; width: 100px"
-                  href="{% url 'signup'%}"
+                  href="{% url 'register'%}"
                   >Sign-up</a
                 >
               </li>
@@ -74,36 +74,6 @@
         </div>
       </nav>
       <!-- Nav Bar end -->
-
-      <div class="d-flex justify-content-center mt-5"></div>
-
-      <div class="input-group mb-3 col-lg-6">
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Recipient's username"
-          aria-label="Recipient's username"
-          aria-describedby="button-addon2"
-        />
-        <button
-          class="btn btn-outline-secondary"
-          type="button"
-          id="button-addon2"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-search"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-            />
-          </svg>
-        </button>
-      </div>
     </header>
     <div
       style="background-color: #ccd3e0"
@@ -139,7 +109,7 @@
 
     <section class="mt-5 container-fluid">
       <h4 class="">Iphone Categories</h4>
-      <div class="d-flex justify-content-center g-4">
+      <div class="d-flex justify-content-around g-4">
         <div class="card mb-3" style="width: auto">
           <div class="row g-0">
             <div class="col-md-3">
@@ -151,7 +121,7 @@
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h6 class="card-title">Iphone 13 pro max</h6>
+                <h6 class="card-title">Iphone 13</h6>
               </div>
             </div>
           </div>
@@ -168,7 +138,7 @@
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h6 class="card-title">Iphone 12 pro max</h6>
+                <h6 class="card-title">Iphone 12</h6>
               </div>
             </div>
           </div>
@@ -214,7 +184,7 @@
               <p class="card-text">
                 {{ products.name }}
               </p>
-              <a href="" class="btn text-white" style="background: #c96e2c"
+              <a href="{% url 'product_details' products.id %}" class="btn text-white" style="background: #c96e2c"
                 ><small>Compare product</small></a
               >
             </div>
