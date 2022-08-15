@@ -1,4 +1,5 @@
 from audioop import reverse
+from distutils.command.upload import upload
 from django.db import models
 from django.contrib.auth import get_user_model
 
@@ -39,7 +40,8 @@ class Product(models.Model):
 
     created_on = models.DateTimeField(auto_now_add=True)
     modified_on = models.DateTimeField(auto_now=True)
-    thumbnail = models.ImageField(default='default-product.png', blank=True)
+    # thumbnail = models.ImageField(default='default-product.png', blank=True)
+    thumbnail = models.ImageField(blank=True, upload_to ='images/')
     # make all thumbnails at most 140x140pixels
 
     class Meta:
