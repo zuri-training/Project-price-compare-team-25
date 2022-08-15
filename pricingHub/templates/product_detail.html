@@ -28,7 +28,7 @@
   <section class="container-fluid d-flex flex-wrap mt-5">
     <div class="col-lg-5 col-md-10 col-sm-12 col-12 justify-content-center">
       <div class="col-12 d-flex justify-content-center">
-        <img src="../static/images/image 12.png">
+        <img src="{{ products.thumbnail.url }}">
       </div>
       <div class="d-flex justify-content-center row g-2 col-lg-12">
         <img src="../static/images/image 12.png" class="img-fluid" style="width:70px ; height: 80px">
@@ -106,6 +106,9 @@
   <section class="d-flex flex-wrap container-fluid mt-5 justify-content-around" >
 
 <h2>Add comment</h2>
+      <a href="{% url 'add_comment'%}">Add Comment</a>
+      <br/>
+      <a href="{% url 'comment'%}">View Comments</a>
 <br/><br/>
 
 
