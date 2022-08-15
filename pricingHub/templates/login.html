@@ -34,16 +34,21 @@
         </div>
         <div class="reg-form">
           <h2 style="text-align: center;">Login Your Account</h2>
+          {% if messages %}
+            {% for message in messages %}
+            <p style="color: red;">{{ message }}</p>
+            {% endfor %}
+          {% endif %}
           <form method="POST" action="">
             {% csrf_token %}
             <div class="sec">
-              <label for="email">Email Address</label><br />
+              <label for="email">Username</label><br />
 
               <input
-                type="text"
+                type="username"
                 class="size"
-                placeholder="input your mail address"
-                name="email"
+                placeholder="Input your Username"
+                name="username"
                 autocapitalize="none"
                 autocomplete="email"
                 required
@@ -63,15 +68,15 @@
               />
               <i class="far fa-eye" id="togglePassword"></i>
             </div>
-            <div class="cta2">
+            <!-- <div class="cta2">
               <p>
-                Forgot password?<a
+                Forgot password? <a
                   href="{% url 'password_reset' %}"
                   class="alert-link"
                   >Reset password</a
                 >
               </p>
-            </div>
+            </div> -->
 
             <div class="submit">
               <button type="submit">Log in</button>
@@ -80,7 +85,7 @@
             <div class="cta1">
               <p>
                 Dont have a PricingHub account?
-                <a href="{% url 'signup' %}">Create account</a>
+                <a href="{% url 'register' %}">Create account</a>
               </p>
             </div>
           </form>

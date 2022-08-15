@@ -24,8 +24,13 @@
               <li><a href="{% url 'homepage'%}">Home</a></li>
               <li><a href="{% url 'category'%}">Categories</a></li>
               <li><a href="{% url 'contact'%}">Contact Us</a></li>
+              {% if user.is_authenticated %}
+              
+              <li><a href="{% url 'logout'%}">Logout</a></li>
+              {% else %}
               <li><a href="{% url 'login'%}">LogIn</a></li>
-             <li class="signup"><a href="{% url 'signup'%}">Sign-up</a></li>
+              <li><a href="{% url 'register'%}">Sign Up</a></li>
+              {% endif %}
             </ul>
           </nav>
         </div>
@@ -39,8 +44,13 @@
               <li><a href="{% url 'homepage'%}">Home</a></li>
               <li><a href="{% url 'category'%}">Categories</a></li>
               <li><a href="{% url 'contact'%}">Contact Us</a></li>
+              {% if user.is_authenticated %}
+              
+              <li><a href="{% url 'logout'%}">Logout</a></li>
+              {% else %}
               <li><a href="{% url 'login'%}">LogIn</a></li>
-              <li class="signup"><a href="{% url 'signup'%}">Sign-up</a></li>
+              <li><a href="{% url 'register'%}">Sign Up</a></li>
+              {% endif %}
             </ul>
           </nav>
         </label>
@@ -58,7 +68,7 @@
                 Luxury iPhone Series
               </h1>
 
-              <div class="signup1"><a href="{% url 'signup'%}">Create Free Account</a></div>
+              <div class="signup1"><a href="{% url 'register'%}">Create Free Account</a></div>
 
               <br />
               <!-- <div class="dots" style="text-align: left">
@@ -78,7 +88,7 @@
                 Gadget Lifetyle?
               </h1>
 
-              <div class="signup1"><a href="{% url 'signup'%}">Create Free Account</a></div>
+              <div class="signup1"><a href="{% url 'register'%}">Create Free Account</a></div>
 
               <br />
               <!-- <div class="dots" style="text-align: left">
@@ -98,7 +108,7 @@
                 Be Your Own Influencer<br />Take The Best Pictures On The Go
               </h1>
 
-              <div class="signup1"><a href="{% url 'signup'%}">Create Free Account</a></div>
+              <div class="signup1"><a href="{% url 'register'%}">Create Free Account</a></div>
               <br />
               <!-- <div class="dots" style="text-align: left">
                 <span class="dot" onclick="currentSlide(1)"></span>

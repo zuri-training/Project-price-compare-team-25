@@ -3,69 +3,83 @@ from django.contrib.auth.models import User, auth
 from django.contrib import messages
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse
-from django.contrib.auth.forms import PasswordResetForm
+from django.contrib.auth.forms import PasswordResetForm, UserCreationForm
 from django.template.loader import render_to_string
 from django.db.models.query_utils import Q
 from django.utils.http import urlsafe_base64_encode
 from django.contrib.auth.tokens import default_token_generator
 from django.utils.encoding import force_bytes
 from django.conf import settings
+from django.contrib.auth import authenticate, login, logout
+from .forms import RegisterUserForm
 
 
-def home(request):
-    return render(request, "index.html")
+# def home(request):
+#     return render(request, "index.html")
 
 def about(request):
     return render(request, 'about.html')
 
-
-def register(request):
-
+def login_user(request):
     if request.method == 'POST':
         username = request.POST['username']
-        email = request.POST['email']
         password = request.POST['password']
-        password2 = request.POST['password']
-
-        if password == password2:
-            if User.objects.filter(email=email).exists():
-                messages.info(request, 'Email taken')
-                return redirect('signup')
-            elif User.objects.filter(username=username).exists():
-                messages.info(request, 'Username is taken')
-                return redirect('signup')
-            else:
-                user = User.objects.create_user(username=username, email=email, password=password)
-                user.save()
-                messages.info(request, "Account created")
-                return redirect('/login')
-
-        else:
-            messages.info(request, 'password does not match')
-            return redirect('signup')
-        return redirect('login')
-    else:
-
-        return render(request, 'signup.html')
-
-def login(request):
-    if request.method == 'POST':
-        email = request.POST['email']
-        password = request.POST['password']
-        user = auth.authenticate(email=email, password=password)
+        user = authenticate(request, username=username, password=password)
         if user is not None:
-            auth.login(request, user)
-            return redirect('home')
+            login(request, user)
+            return redirect('homepage')
         else:
             messages.info(request, 'Invalid Credentials')
             return redirect('login')
 
     else:
-        return render(request, 'login.html')
+        return render(request, 'login.html', {})
 
-def logout(request):
-    auth.logout(request)
-    return redirect('login')
+def register_user(request):
+
+    if request.method == 'POST':
+        form = RegisterUserForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password1']
+            user = authenticate(username=username, password=password)
+            login (request, user)
+            return redirect('homepage')
+    else:
+        form = RegisterUserForm()
+    return render(request, 'register.html', {'form':form,})
+    #     username = request.POST['username']
+    #     email = request.POST['email']
+    #     password = request.POST['password']
+    #     password2 = request.POST['password']
+
+    #     if password == password2:
+    #         if User.objects.filter(email=email).exists():
+    #             messages.info(request, 'Email taken')
+    #             return redirect('signup')
+    #         elif User.objects.filter(username=username).exists():
+    #             messages.info(request, 'Username is taken')
+    #             return redirect('signup')
+    #         else:
+    #             user = User.objects.create_user(username=username, email=email, password=password)
+    #             user.save()
+    #             messages.info(request, "Account created")
+    #             return redirect('/login')
+
+    #     else:
+    #         messages.info(request, 'password does not match')
+    #         return redirect('signup')
+    #     return redirect('login')
+    # else:
+
+    #     return render(request, 'register.html', {})
+
+
+
+def logout_user(request):
+    logout(request)
+    return redirect('homepage')
 
 def password_reset_request(request):
     if request.method == "POST":
