@@ -16,5 +16,4 @@ from django.shortcuts import render
 # """
 #     return HttpResponse(HTML_STRING)
 def homepage(request):
-
-    return render(request, "main.html")
+    return render(request, "index.html")

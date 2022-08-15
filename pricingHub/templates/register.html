@@ -31,93 +31,23 @@
     <main>
       <section class="container-fluid" id="reg">
         <div class="reg-form">
-          <h2 style="text-align: center">Create Account</h2>
-          <form method="POST" action="/register">
+          <h2 style="text-align: center; margin: 10px; padding: 10px;">Create Account</h2>
+          {% if form.errors %}
+          <p>There was an error</p>
+          {% endif %}
+          <form method="POST" action="{% url 'register' %}"  style="border: 1px solid #C96E2C; padding: 10px;">
             {% csrf_token %}
-            <div class="sec">
-              <label for="name">Full name</label><br />
-              <input
-                type="text"
-                class="size"
-                placeholder="input your full name"
-                name="username"
-                required
-              />
-            </div>
-
-            <div class="sec">
-              <label for="email">Email Address</label><br />
-
-              <input
-                type="email"
-                class="size"
-                placeholder="enter your mail address"
-                name="email"
-                autocapitalize="none"
-                autocomplete="email"
-                required
-              />
-            </div>
-
-            <div class="sec">
-              <label for="password">Password</label><br />
-              <input
-                type="password"
-                class="size"
-                name="password"
-                placeholder="input password"
-                autocomplete="current-password"
-                id="password"
-                required
-              />
-            </div>
-
-            <div class="sec">
-              <label for="password">Repeat Password</label><br />
-              <input
-                type="password2"
-                class="size"
-                name="password2"
-                placeholder="input password"
-                autocomplete="current-password"
-                id="password2"
-                required
-              />
-            </div>
-
-            <div class="sec">
-              <input
-                type="checkbox"
-                name="accept-privacy"
-                id="accept-privacy"
-                checked
-              />
-              <label for="accept-privacy"
-                >I accept the
-                <a href="{% url 'privacy'%}">Privacy Policy</a> and
-                <a href="{% url 'terms'%}">Terms and Conditions</a></label
-              >
-            </div>
-
-            <div class="sec">
-              <input type="checkbox" name="accept-notify" id="notify" />
-              <label for="notify"
-                >I want to receive notifications on new updates, sales and
-                events on PricingHub</label
-              >
-            </div>
-
+            {{form.as_p}}
             <div class="submit">
               <button type="submit">Create Account</button>
             </div>
-
-            <div class="cta">
-              <p>
-                Already have a PricingHub account?
-                <a href="{% url 'login' %}">Login account</a>
-              </p>
-            </div>
           </form>
+          <div class="cta">
+            <p>
+              Already have a PricingHub account?
+              <a href="{% url 'login' %}">Login account</a>
+            </p>
+          </div> 
         </div>
 
         <div class="side-image">

@@ -11,11 +11,9 @@ def category(request):
     categories = Category.objects.all()
     return render(request, 'category.html', {'categories': categories})
 
-
 def product(request):
     products = Product.objects.all()
     return render(request, 'index.html', {'products': products})
-
 
 def category(request):
     products = Product.objects.all()

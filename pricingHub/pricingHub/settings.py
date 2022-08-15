@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'accounts',
     'products.apps.ProductsConfig',
     'search',
-    'reviews'
+    'reviews',
 ]
 
 MIDDLEWARE = [
