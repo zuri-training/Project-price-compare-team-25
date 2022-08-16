@@ -58,6 +58,12 @@
                   >Contact Us</a
                 >
               </li>
+              
+              {% if user.is_authenticated %}              
+              <li class="nav-item px-3">
+                <a class="nav-link text-white" href="{% url 'logout'%}">Logout</a>
+              </li>
+              {% else %}
               <li class="nav-item px-3">
                 <a class="nav-link text-white" href="{% url 'login'%}">Login</a>
               </li>
@@ -69,6 +75,7 @@
                   >Sign-up</a
                 >
               </li>
+              {% endif %}
             </ul>
           </div>
         </div>
@@ -164,15 +171,13 @@
     </section>
 
     <!-- products -->
-    <section class="container d-flex mt-5">
-
-      {% for products in products   %}
-   
+    <section class="container d-flex mt-5">   
       <div class="row row-cols-2 row-cols-md-3 g-5">
+        {% for products in products %}
         <div class="col">
           <div class="card" style="width: 12rem">
             <img
-              src="{{ products.thumbnail }}"
+              src="../static/images/image 12.png"
               class="img-fluid img-thumbnail"
               alt="..."
               style="width: 196px; height: 200px !important"
@@ -184,9 +189,15 @@
               <p class="card-text">
                 {{ products.name }}
               </p>
+                
+              {% if user.is_authenticated %}              
               <a href="{% url 'product_details' products.id %}" class="btn text-white" style="background: #c96e2c"
                 ><small>Compare product</small></a
               >
+              {% else %}
+              <a href="{% url 'login'%}" class="btn text-white" style="
+                color: #c96e2c;">Login to Compare</a>
+              {% endif %}
             </div>
           </div>
         </div>

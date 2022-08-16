@@ -38,12 +38,12 @@
           <li>
             <a href="{% url 'contact'%}">Contact Us</a>
           </li>
-          <li>
-            <a href="{% url 'login'%}">LogIn</a>
-          </li>
-          <li>
-            <a href="{% url 'register'%}">Sign Up</a>
-          </li>
+          {% if user.is_authenticated %}              
+          <li><a href="{% url 'logout'%}">Logout</a></li>
+          {% else %}
+          <li><a href="{% url 'login'%}">LogIn</a></li>
+          <li><a href="{% url 'register'%}">Sign Up</a></li>
+          {% endif %}
         </ul>
       </div>
     </nav>

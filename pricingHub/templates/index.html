@@ -44,8 +44,7 @@
               <li><a href="{% url 'homepage'%}">Home</a></li>
               <li><a href="{% url 'category'%}">Categories</a></li>
               <li><a href="{% url 'contact'%}">Contact Us</a></li>
-              {% if user.is_authenticated %}
-              
+              {% if user.is_authenticated %}              
               <li><a href="{% url 'logout'%}">Logout</a></li>
               {% else %}
               <li><a href="{% url 'login'%}">LogIn</a></li>
@@ -67,8 +66,11 @@
                 Get The Best Deals on <br />
                 Luxury iPhone Series
               </h1>
-
+              
+              {% if user.is_authenticated %}              
+              {% else %}
               <div class="signup1"><a href="{% url 'register'%}">Create Free Account</a></div>
+              {% endif %}
 
               <br />
               <!-- <div class="dots" style="text-align: left">
@@ -88,7 +90,10 @@
                 Gadget Lifetyle?
               </h1>
 
+              {% if user.is_authenticated %}              
+              {% else %}
               <div class="signup1"><a href="{% url 'register'%}">Create Free Account</a></div>
+              {% endif %}
 
               <br />
               <!-- <div class="dots" style="text-align: left">
@@ -108,7 +113,10 @@
                 Be Your Own Influencer<br />Take The Best Pictures On The Go
               </h1>
 
+              {% if user.is_authenticated %}              
+              {% else %}
               <div class="signup1"><a href="{% url 'register'%}">Create Free Account</a></div>
+              {% endif %}
               <br />
               <!-- <div class="dots" style="text-align: left">
                 <span class="dot" onclick="currentSlide(1)"></span>
@@ -117,7 +125,6 @@
               </div> -->
               <br />
           </div>
-
 
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -168,7 +175,7 @@
                   alt="jumia logo"
                   height="20px"
               /></span>
-              <span class="price">$364</span>
+              <span class="price">#620,000</span>
             </div>
             <div class="product-name">
               Apple iPhone 11, 64GB, Black - Unlocked...
@@ -190,7 +197,7 @@
             </div>
             
             {% if user.is_authenticated %}              
-            <button class="view-in-category"> <a href="" style="
+            <button class="view-in-category"> <a href="#" style="
               color: #c96e2c;">Compare Product</a></button>
             {% else %}
             <button class="view-in-category"> <a href="{% url 'login'%}" style="
@@ -209,7 +216,7 @@
                   alt="konga logo"
                   height="20px"
               /></span>
-              <span class="price">$364</span>
+              <span class="price">#622,000</span>
             </div>
             <div class="product-name">
               Apple iPhone 11, 64GB, Black - Unlocked...
@@ -230,7 +237,7 @@
               <span>Comments</span>
             </div>
             {% if user.is_authenticated %}              
-            <button class="view-in-category"> <a href="" style="
+            <button class="view-in-category"> <a href="#" style="
               color: #c96e2c;">Compare Product</a></button>
             {% else %}
             <button class="view-in-category"> <a href="{% url 'login'%}" style="
@@ -249,7 +256,7 @@
                   alt="kara logo"
                   height="20px"
               /></span>
-              <span class="price">$364</span>
+              <span class="price">#615,000</span>
             </div>
             <div class="product-name">
               Apple iPhone 11, 64GB, Black - Unlocked...
@@ -270,7 +277,7 @@
               <span>Comments</span>
             </div>
             {% if user.is_authenticated %}              
-            <button class="view-in-category"> <a href="" style="
+            <button class="view-in-category"> <a href="#" style="
               color: #c96e2c;">Compare Product</a></button>
             {% else %}
             <button class="view-in-category"> <a href="{% url 'login'%}" style="
@@ -319,7 +326,7 @@
               <span class="platform"
                 ><img src="../static/images/jumia logo.png" alt="jumia logo"
               /></span>
-              <span class="price">$364</span>
+              <span class="price">#618,000</span>
             </div>
             <div class="product-name">
               Apple iPhone 11, 64GB, Black - Unlocked...
@@ -356,7 +363,7 @@
               <span class="platform"
                 ><img src="../static/images/konga.png" alt="konga logo"
               /></span>
-              <span class="price">$364</span>
+              <span class="price">#622,000</span>
             </div>
             <div class="product-name">
               Apple iPhone 11, 64GB, Black - Unlocked...
@@ -393,7 +400,7 @@
               <span class="platform"
                 ><img src="../static/images/kara.png" alt="kara logo"
               /></span>
-              <span class="price">$364</span>
+              <span class="price">#620,000</span>
             </div>
             <div class="product-name">
               Apple iPhone 11, 64GB, Black - Unlocked...
