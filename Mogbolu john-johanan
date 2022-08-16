@@ -10,8 +10,12 @@ contributions:
 
 Task 1: Creation of the database schema
 I researched on database schema.
-I contributed to the creation of the database schema.
-I contributed to the creation of the sql schema.
+I contributed to the creation of the database schema.(this was done by the collective effort of a group)
+I contributed to the creation of the sql schema.(this was done by the collective effort of a group)
+
+challanges:
+i had to understand what a database schema was, and its use as it pertains to my project
+There was difficult understanding how apps should be represented on the schema, aswell as what should and should not be included. 
 
 ( https://github.com/zuri-training/Project-price-compare-team-25/issues/16 )
 
@@ -25,12 +29,18 @@ I Linked the comment table to the views and
 I Linked the views to the Frontend.
 I Coded the urls and ensured linking was bug free.
 I assisted in the creation of the views
+i linked and incoporated it to the template and ensured it was rendered
+
+challanges;
+i had to write html to render the comments table on the frontend, this was challanging as i had no piror knowledge of such.
 
 (https://github.com/zuri-training/Project-price-compare-team-25/issues/27?notification_referrer_id=NT_kwDOBkk037Q0MTIwNDYzOTI5OjEwNTQ2MDk1OQ#event-7155356678) 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Task 3: i contributed to Linking backend apps to frontend
+(The review and produts app)
 
+i also edited the data in the database to resolve disconneted urls from the products cormemcial site, aswell as manipulate database in areas where it was shortcomming.
 (https://github.com/zuri-training/Project-price-compare-team-25/issues?q=assignee%3Adevsomie+is%3Aopen)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
